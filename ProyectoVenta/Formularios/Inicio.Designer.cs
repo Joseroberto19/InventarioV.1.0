@@ -48,6 +48,7 @@
             // 
             // btnproductos
             // 
+            this.btnproductos.AutoSize = true;
             this.btnproductos.BackColor = System.Drawing.SystemColors.Control;
             this.btnproductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnproductos.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -86,6 +87,7 @@
             // 
             // btnClientes
             // 
+            this.btnClientes.AutoSize = true;
             this.btnClientes.BackColor = System.Drawing.SystemColors.Control;
             this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClientes.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -109,6 +111,7 @@
             // 
             // btnSalidas
             // 
+            this.btnSalidas.AutoSize = true;
             this.btnSalidas.BackColor = System.Drawing.SystemColors.Control;
             this.btnSalidas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalidas.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -132,6 +135,7 @@
             // 
             // btnentradas
             // 
+            this.btnentradas.AutoSize = true;
             this.btnentradas.BackColor = System.Drawing.SystemColors.Control;
             this.btnentradas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnentradas.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -155,6 +159,7 @@
             // 
             // btnProveedores
             // 
+            this.btnProveedores.AutoSize = true;
             this.btnProveedores.BackColor = System.Drawing.SystemColors.Control;
             this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProveedores.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -178,6 +183,7 @@
             // 
             // btnInventario
             // 
+            this.btnInventario.AutoSize = true;
             this.btnInventario.BackColor = System.Drawing.SystemColors.Control;
             this.btnInventario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInventario.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -201,6 +207,7 @@
             // 
             // btnConfiguracion
             // 
+            this.btnConfiguracion.AutoSize = true;
             this.btnConfiguracion.BackColor = System.Drawing.SystemColors.Control;
             this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracion.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
@@ -310,7 +317,6 @@
             this.Controls.Add(this.btnproductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(816, 578);
             this.MinimumSize = new System.Drawing.Size(816, 578);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

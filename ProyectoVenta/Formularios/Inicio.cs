@@ -12,6 +12,7 @@ using ProyectoVenta.Formularios.Clientes;
 using ProyectoVenta.Formularios.Proveedores;
 using ProyectoVenta.Formularios.Inventario;
 using ProyectoVenta.Modales;
+using FontAwesome.Sharp;
 
 namespace ProyectoVenta.Formularios
 {
@@ -60,6 +61,38 @@ namespace ProyectoVenta.Formularios
             btnproductos.FlatAppearance.BorderSize = 1;
             btnproductos.ForeColor = Color.FromArgb(70, 70, 70);
             btnproductos.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            // Estilizando los botones con íconos (btnClientes)
+            btnClientes.BackColor = Color.White;
+            btnClientes.FlatStyle = FlatStyle.Flat;
+            btnClientes.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnClientes.FlatAppearance.BorderSize = 1;
+            btnClientes.ForeColor = Color.FromArgb(70, 70, 70);
+            btnClientes.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            // Estilizando los botones con íconos (btnProveedores)
+            btnProveedores.BackColor = Color.White;
+            btnProveedores.FlatStyle = FlatStyle.Flat;
+            btnProveedores.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnProveedores.FlatAppearance.BorderSize = 1;
+            btnProveedores.ForeColor = Color.FromArgb(70, 70, 70);
+            btnProveedores.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            // Estilizando los botones con íconos (btnInventario)
+            btnInventario.BackColor = Color.White;
+            btnInventario.FlatStyle = FlatStyle.Flat;
+            btnInventario.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnInventario.FlatAppearance.BorderSize = 1;
+            btnInventario.ForeColor = Color.FromArgb(70, 70, 70);
+            btnInventario.Font = new Font("Arial", 10, FontStyle.Bold);
+
+            // Estilizando los botones con íconos (btnConfiguracion)
+            btnConfiguracion.BackColor = Color.White;
+            btnConfiguracion.FlatStyle = FlatStyle.Flat;
+            btnConfiguracion.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnConfiguracion.FlatAppearance.BorderSize = 1;
+            btnConfiguracion.ForeColor = Color.FromArgb(70, 70, 70);
+            btnConfiguracion.Font = new Font("Arial", 10, FontStyle.Bold);
 
         }
 
@@ -229,5 +262,6 @@ namespace ProyectoVenta.Formularios
         {
 
         }
+
     }
 }

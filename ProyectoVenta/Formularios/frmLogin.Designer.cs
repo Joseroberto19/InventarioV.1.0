@@ -37,7 +37,6 @@
             this.btningresar = new System.Windows.Forms.Button();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +45,9 @@
             this.label5.BackColor = System.Drawing.Color.SpringGreen;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(90, 154);
+            this.label5.Location = new System.Drawing.Point(86, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 40);
+            this.label5.Size = new System.Drawing.Size(156, 40);
             this.label5.TabIndex = 45;
             this.label5.Text = "INVENTARIO";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,15 +137,6 @@
             this.txtusuario.Size = new System.Drawing.Size(245, 23);
             this.txtusuario.TabIndex = 50;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.PaleGreen;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 224);
-            this.label1.TabIndex = 49;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +151,6 @@
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtusuario);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(345, 551);
@@ -185,6 +174,5 @@
         private System.Windows.Forms.Button btningresar;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.TextBox txtusuario;
-        private System.Windows.Forms.Label label1;
     }
 }

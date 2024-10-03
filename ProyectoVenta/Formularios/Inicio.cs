@@ -25,7 +25,44 @@ namespace ProyectoVenta.Formularios
         public Inicio()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(245, 245, 245);  // Blanco humo para un look limpio
+            label1.BackColor = Color.FromArgb(52, 152, 219);//Azul Claro
+            label1.ForeColor = Color.White;  // Texto en blanco
+            btnsalir.BackColor = Color.FromArgb(231, 76, 60);  // Rojo coral suave
+            btnsalir.ForeColor = Color.White;  // Texto blanco para el botón
+            toolStripStatusLabel1.ForeColor = Color.FromArgb(70, 70, 70);
+            lblstatus1.ForeColor = Color.FromArgb(70, 70, 70); // Gris oscuro para el texto
+            toolStripStatusLabel2.ForeColor = Color.FromArgb(70, 70, 70);
+            lblstatus2.ForeColor = Color.FromArgb(70, 70, 70);
+
+
+            // Estilizando los botones con íconos (btnEntradas)
+            btnentradas.BackColor = Color.White;  // Fondo blanco para los botones
+            btnentradas.FlatStyle = FlatStyle.Flat;  // Estilo plano para los bordes
+            btnentradas.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);  // Azul claro para el borde
+            btnentradas.FlatAppearance.BorderSize = 1;  // Borde fino
+            btnentradas.ForeColor = Color.FromArgb(70, 70, 70);  // Texto gris oscuro
+            btnentradas.Font = new Font("Arial", 10, FontStyle.Bold);  // Fuente más moderna y clara
+
+            // Estilizando los botones con íconos (btnSalidas)
+            btnSalidas.BackColor = Color.White;
+            btnSalidas.FlatStyle = FlatStyle.Flat;
+            btnSalidas.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnSalidas.FlatAppearance.BorderSize = 1;
+            btnSalidas.ForeColor = Color.FromArgb(70, 70, 70);
+            btnSalidas.Font = new Font("Arial", 10, FontStyle.Bold);
+
+
+            // Estilizando los botones con íconos (btnProductos)
+            btnproductos.BackColor = Color.White;
+            btnproductos.FlatStyle = FlatStyle.Flat;
+            btnproductos.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            btnproductos.FlatAppearance.BorderSize = 1;
+            btnproductos.ForeColor = Color.FromArgb(70, 70, 70);
+            btnproductos.Font = new Font("Arial", 10, FontStyle.Bold);
+
         }
+
         private void Inicio_Load(object sender, EventArgs e)
         {
             lblstatus1.Text = string.Format("{0}", NombreUsuario);

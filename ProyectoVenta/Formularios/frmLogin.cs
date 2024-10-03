@@ -17,6 +17,19 @@ namespace ProyectoVenta.Formularios
         public frmLogin()
         {
             InitializeComponent();
+            this.BackColor = Color.FromArgb(245, 245, 245);  // Blanco humo para el fondo general
+            label2.ForeColor = Color.FromArgb(70, 70, 70);
+            label3.ForeColor = Color.FromArgb(70, 70, 70);
+            label5.BackColor = Color.FromArgb(144, 238, 144);
+            btningresar.BackColor = Color.FromArgb(0, 123, 255);
+            btningresar.ForeColor = Color.White;
+            btnSalir.BackColor = Color.FromArgb(255, 87, 87); // Rojo coral suave
+            btnSalir.ForeColor = Color.White;
+            txtusuario.BackColor = Color.White;
+            txtusuario.ForeColor = Color.FromArgb(50, 50, 50); // Texto gris oscuro
+            txtclave.BackColor = Color.White;
+            txtclave.ForeColor = Color.FromArgb(50, 50, 50);
+            iconPictureBox1.BackColor = Color.FromArgb(144, 238, 144); //Verde suave
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -26,12 +39,11 @@ namespace ProyectoVenta.Formularios
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://ouo.io/RK1tRH");
+
         }
 
         private void iconPictureBox1_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://ouo.io/VRgLgZ");
         }
 
         private void Frm_Closing(object sender, FormClosingEventArgs e)
@@ -92,17 +104,19 @@ namespace ProyectoVenta.Formularios
 
         private void iconPictureBox1_MouseHover(object sender, EventArgs e)
         {
-            iconPictureBox1.BackColor = Color.DarkCyan;
         }
 
         private void iconPictureBox1_MouseLeave(object sender, EventArgs e)
         {
-            iconPictureBox1.BackColor = Color.Teal;
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

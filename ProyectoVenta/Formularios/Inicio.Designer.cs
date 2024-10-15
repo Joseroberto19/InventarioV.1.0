@@ -113,7 +113,7 @@
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnClientes.Location = new System.Drawing.Point(0, 240);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(167, 66);
+            this.btnClientes.Size = new System.Drawing.Size(167, 68);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,9 +135,9 @@
             this.btnSalidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalidas.IconSize = 50;
             this.btnSalidas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalidas.Location = new System.Drawing.Point(0, 384);
+            this.btnSalidas.Location = new System.Drawing.Point(0, 388);
             this.btnSalidas.Name = "btnSalidas";
-            this.btnSalidas.Size = new System.Drawing.Size(167, 66);
+            this.btnSalidas.Size = new System.Drawing.Size(167, 68);
             this.btnSalidas.TabIndex = 5;
             this.btnSalidas.Text = "Salidas";
             this.btnSalidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -159,9 +159,9 @@
             this.btnentradas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnentradas.IconSize = 50;
             this.btnentradas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnentradas.Location = new System.Drawing.Point(0, 312);
+            this.btnentradas.Location = new System.Drawing.Point(0, 314);
             this.btnentradas.Name = "btnentradas";
-            this.btnentradas.Size = new System.Drawing.Size(167, 66);
+            this.btnentradas.Size = new System.Drawing.Size(167, 68);
             this.btnentradas.TabIndex = 6;
             this.btnentradas.Text = "Entradas";
             this.btnentradas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -207,9 +207,9 @@
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnInventario.IconSize = 50;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventario.Location = new System.Drawing.Point(0, 456);
+            this.btnInventario.Location = new System.Drawing.Point(0, 462);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(167, 66);
+            this.btnInventario.Size = new System.Drawing.Size(167, 68);
             this.btnInventario.TabIndex = 8;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -231,7 +231,7 @@
             this.btnConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnConfiguracion.IconSize = 50;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnConfiguracion.Location = new System.Drawing.Point(692, 441);
+            this.btnConfiguracion.Location = new System.Drawing.Point(692, 449);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(122, 81);
             this.btnConfiguracion.TabIndex = 9;
@@ -321,22 +321,22 @@
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.ImageList = this.imageList1;
-            this.tabControl1.Location = new System.Drawing.Point(0, 92);
+            this.tabControl1.Location = new System.Drawing.Point(283, 200);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(6, 8);
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(814, 482);
+            this.tabControl1.Size = new System.Drawing.Size(431, 88);
             this.tabControl1.TabIndex = 12;
             // 
             // tabProductos
             // 
             this.tabProductos.ImageKey = "producto32.png";
-            this.tabProductos.Location = new System.Drawing.Point(49, 4);
+            this.tabProductos.Location = new System.Drawing.Point(274, 4);
             this.tabProductos.Name = "tabProductos";
             this.tabProductos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProductos.Size = new System.Drawing.Size(761, 474);
+            this.tabProductos.Size = new System.Drawing.Size(153, 80);
             this.tabProductos.TabIndex = 0;
             this.tabProductos.Text = "Productos";
             this.tabProductos.UseVisualStyleBackColor = true;
@@ -344,10 +344,10 @@
             // 
             // tabProveedores
             // 
-            this.tabProveedores.Location = new System.Drawing.Point(49, 4);
+            this.tabProveedores.Location = new System.Drawing.Point(274, 4);
             this.tabProveedores.Name = "tabProveedores";
             this.tabProveedores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProveedores.Size = new System.Drawing.Size(761, 468);
+            this.tabProveedores.Size = new System.Drawing.Size(153, 80);
             this.tabProveedores.TabIndex = 1;
             this.tabProveedores.Text = "Proveedores";
             this.tabProveedores.UseVisualStyleBackColor = true;

@@ -95,9 +95,17 @@ namespace ProyectoVenta.Formularios
             btnConfiguracion.Font = new Font("Arial", 10, FontStyle.Bold);
 
         }
-
+        //LOAD
         private void Inicio_Load(object sender, EventArgs e)
         {
+            // Configura el TabControl
+            tabControl1.Alignment = TabAlignment.Left; // Coloca las pestañas a la izquierda
+            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed; // Habilita el dibujo personalizado
+            tabControl1.ItemSize = new Size(100, 100); // Ajusta el tamaño de las pestañas (ancho, alto)
+
+            // Maneja el evento DrawItem
+            tabControl1.DrawItem += tabControl1_DrawItem;
+
             lblstatus1.Text = string.Format("{0}", NombreUsuario);
             lblstatus2.Text = string.Format("{0}", FechaHora);
 
@@ -263,5 +271,52 @@ namespace ProyectoVenta.Formularios
 
         }
 
+        private void tabProductos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            // Obtén el gráfico para dibujar
+            Graphics g = e.Graphics;
+
+            // Obtén el área de la pestaña
+            Rectangle tabArea = tabControl1.GetTabRect(e.Index);
+
+            // Establece una fuente más grande para el texto
+            Font font = new Font(tabControl1.Font.FontFamily, 12, FontStyle.Regular);
+
+            // Rotar el texto
+            string tabText = tabControl1.TabPages[e.Index].Text;
+            using (StringFormat stringFormat = new StringFormat())
+            {
+                // Rotar el texto 90 grados en sentido antihorario
+                stringFormat.Alignment = StringAlignment.Center;
+                stringFormat.LineAlignment = StringAlignment.Center;
+
+                g.TranslateTransform(tabArea.Left + tabArea.Width / 2, tabArea.Top + tabArea.Height / 2);
+                g.RotateTransform(0);
+                g.DrawString(tabText, font, Brushes.Black, 0, 0, stringFormat);
+                g.ResetTransform();
+            }
+        }
+
+        private void btn2Configuracion_Click(object sender, EventArgs e)
+        {
+            using (var Iform = new IConfiguracion())
+            {
+
+                Iform.BackColor = Color.Teal;
+                var result = Iform.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    Form FormularioVista = Iform.FormularioVista;
+                    this.Hide();
+                    FormularioVista.Show();
+                    FormularioVista.FormClosing += Frm_Closing;
+                }
+            }
+        }
     }
 }

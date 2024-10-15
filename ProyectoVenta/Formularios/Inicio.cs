@@ -101,7 +101,9 @@ namespace ProyectoVenta.Formularios
             // Configura el TabControl
             tabControl1.Alignment = TabAlignment.Left; // Coloca las pestañas a la izquierda
             tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed; // Habilita el dibujo personalizado
-            tabControl1.ItemSize = new Size(100, 100); // Ajusta el tamaño de las pestañas (ancho, alto)
+            tabControl1.ItemSize = new Size(50, 125); // Ajusta el tamaño de las pestañas (ancho, alto)
+            tabControl1.TabPages[0].ImageIndex = 0; // Para la primera pestaña
+
 
             // Maneja el evento DrawItem
             tabControl1.DrawItem += tabControl1_DrawItem;
@@ -278,27 +280,36 @@ namespace ProyectoVenta.Formularios
 
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
-            // Obtén el gráfico para dibujar
             Graphics g = e.Graphics;
-
-            // Obtén el área de la pestaña
             Rectangle tabArea = tabControl1.GetTabRect(e.Index);
 
-            // Establece una fuente más grande para el texto
-            Font font = new Font(tabControl1.Font.FontFamily, 12, FontStyle.Regular);
+            // Dibuja la imagen si está asignada a la pestaña
+            if (tabControl1.ImageList != null)
+            {
+                int imageIndex = tabControl1.TabPages[e.Index].ImageIndex;
+                if (imageIndex >= 0)
+                {
+                    Image img = tabControl1.ImageList.Images[imageIndex];
+                    // Centra la imagen en la pestaña
+                    Point imgLocation = new Point(tabArea.X + 5, tabArea.Y + (tabArea.Height - img.Height) / 2);
+                    g.DrawImage(img, imgLocation);
+                }
+            }
 
-            // Rotar el texto
+            // Establece el desplazamiento entre la imagen y el texto
+            int imageTextSpacing = 40; // Espacio entre la imagen y el texto
+
+            // Dibuja el texto sin rotación
             string tabText = tabControl1.TabPages[e.Index].Text;
+            Font font = new Font(tabControl1.Font.FontFamily, 10, FontStyle.Regular);
+
+            // Ajustar la posición del texto para dejar más espacio desde la imagen
+            Rectangle textArea = new Rectangle(tabArea.X + imageTextSpacing, tabArea.Y, tabArea.Width - imageTextSpacing, tabArea.Height);
             using (StringFormat stringFormat = new StringFormat())
             {
-                // Rotar el texto 90 grados en sentido antihorario
-                stringFormat.Alignment = StringAlignment.Center;
+                stringFormat.Alignment = StringAlignment.Near;
                 stringFormat.LineAlignment = StringAlignment.Center;
-
-                g.TranslateTransform(tabArea.Left + tabArea.Width / 2, tabArea.Top + tabArea.Height / 2);
-                g.RotateTransform(0);
-                g.DrawString(tabText, font, Brushes.Black, 0, 0, stringFormat);
-                g.ResetTransform();
+                g.DrawString(tabText, font, Brushes.Black, textArea, stringFormat);
             }
         }
 

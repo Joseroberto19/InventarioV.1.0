@@ -321,22 +321,22 @@
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.ImageList = this.imageList1;
-            this.tabControl1.Location = new System.Drawing.Point(283, 200);
+            this.tabControl1.Location = new System.Drawing.Point(0, 92);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(6, 8);
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(431, 88);
+            this.tabControl1.Size = new System.Drawing.Size(814, 484);
             this.tabControl1.TabIndex = 12;
             // 
             // tabProductos
             // 
             this.tabProductos.ImageKey = "producto32.png";
-            this.tabProductos.Location = new System.Drawing.Point(274, 4);
+            this.tabProductos.Location = new System.Drawing.Point(49, 4);
             this.tabProductos.Name = "tabProductos";
             this.tabProductos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProductos.Size = new System.Drawing.Size(153, 80);
+            this.tabProductos.Size = new System.Drawing.Size(761, 476);
             this.tabProductos.TabIndex = 0;
             this.tabProductos.Text = "Productos";
             this.tabProductos.UseVisualStyleBackColor = true;
@@ -344,10 +344,10 @@
             // 
             // tabProveedores
             // 
-            this.tabProveedores.Location = new System.Drawing.Point(274, 4);
+            this.tabProveedores.Location = new System.Drawing.Point(49, 4);
             this.tabProveedores.Name = "tabProveedores";
             this.tabProveedores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProveedores.Size = new System.Drawing.Size(153, 80);
+            this.tabProveedores.Size = new System.Drawing.Size(761, 476);
             this.tabProveedores.TabIndex = 1;
             this.tabProveedores.Text = "Proveedores";
             this.tabProveedores.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@
             this.tabClientes.Location = new System.Drawing.Point(49, 4);
             this.tabClientes.Name = "tabClientes";
             this.tabClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabClientes.Size = new System.Drawing.Size(761, 468);
+            this.tabClientes.Size = new System.Drawing.Size(761, 476);
             this.tabClientes.TabIndex = 2;
             this.tabClientes.Text = "Clientes";
             this.tabClientes.UseVisualStyleBackColor = true;
@@ -367,7 +367,7 @@
             this.tabCompras.Location = new System.Drawing.Point(49, 4);
             this.tabCompras.Name = "tabCompras";
             this.tabCompras.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCompras.Size = new System.Drawing.Size(761, 468);
+            this.tabCompras.Size = new System.Drawing.Size(761, 476);
             this.tabCompras.TabIndex = 3;
             this.tabCompras.Text = "Compras";
             this.tabCompras.UseVisualStyleBackColor = true;
@@ -377,7 +377,7 @@
             this.tabVentas.Location = new System.Drawing.Point(49, 4);
             this.tabVentas.Name = "tabVentas";
             this.tabVentas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVentas.Size = new System.Drawing.Size(761, 468);
+            this.tabVentas.Size = new System.Drawing.Size(761, 476);
             this.tabVentas.TabIndex = 4;
             this.tabVentas.Text = "Ventas";
             this.tabVentas.UseVisualStyleBackColor = true;
@@ -387,7 +387,7 @@
             this.tabInventario.Location = new System.Drawing.Point(49, 4);
             this.tabInventario.Name = "tabInventario";
             this.tabInventario.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInventario.Size = new System.Drawing.Size(761, 468);
+            this.tabInventario.Size = new System.Drawing.Size(761, 476);
             this.tabInventario.TabIndex = 5;
             this.tabInventario.Text = "Inventario";
             this.tabInventario.UseVisualStyleBackColor = true;

@@ -14,6 +14,7 @@ using ProyectoVenta.Formularios.Inventario;
 using ProyectoVenta.Modales;
 using FontAwesome.Sharp;
 using ProyectoVenta.Formularios.Entradas;
+using ProyectoVenta.Logica;
 
 namespace ProyectoVenta.Formularios
 {
@@ -144,7 +145,8 @@ namespace ProyectoVenta.Formularios
             this.Show();
         }
 
-        private void AbrirFormHija(object formhija) {
+        //FUNCION PANEL
+        public void AbrirFormHija(object formhija) {
             if (this.panelContenedor.Controls.Count > 0)
                 this.panelContenedor.Controls.RemoveAt(0);
             Form fh = formhija as Form;
@@ -173,7 +175,7 @@ namespace ProyectoVenta.Formularios
             }
             */
 
-            AbrirFormHija(new frmRegistrarProducto());
+            FormManager.AbrirFormHija(this.panelContenedor, new frmRegistrarProducto());
 
         }
 
@@ -301,6 +303,11 @@ namespace ProyectoVenta.Formularios
                     FormularioVista.FormClosing += Frm_Closing;
                 }
             }
+        }
+
+        public void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

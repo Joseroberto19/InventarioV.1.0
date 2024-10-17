@@ -334,6 +334,7 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1203, 609);
             this.panelContenedor.TabIndex = 14;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // Inicio
             // 
@@ -386,6 +387,6 @@
         private FontAwesome.Sharp.IconButton btnsalir;
         private FontAwesome.Sharp.IconButton btn2Configuracion;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.Panel panelContenedor;
+        public System.Windows.Forms.Panel panelContenedor;
     }
 }

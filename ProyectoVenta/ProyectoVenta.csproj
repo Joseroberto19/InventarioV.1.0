@@ -242,6 +242,7 @@
     <Compile Include="Logica\Conexion.cs" />
     <Compile Include="Logica\DatoLogica.cs" />
     <Compile Include="Logica\EntradaLogica.cs" />
+    <Compile Include="Logica\FormManager.cs" />
     <Compile Include="Logica\InventarioLogica.cs" />
     <Compile Include="Logica\PermisosLogica.cs" />
     <Compile Include="Logica\TipoBarraLogica.cs" />

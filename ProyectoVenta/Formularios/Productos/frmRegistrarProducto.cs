@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BarcodeLib;
 using System.IO;
+using ProyectoVenta.Formularios.Productos;
 
 namespace ProyectoVenta.Formularios
 {
@@ -306,6 +307,13 @@ namespace ProyectoVenta.Formularios
             {
                 row.Visible = true;
             }
+        }
+
+        private void btncargar_Click(object sender, EventArgs e)
+        {
+            Inicio inicio = new Inicio();
+            FormManager.AbrirFormHija(inicio.panelContenedor, new frmCargarProducto());
+
         }
     }
 }

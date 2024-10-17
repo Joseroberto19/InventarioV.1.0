@@ -176,7 +176,8 @@ namespace ProyectoVenta.Formularios
             }
             */
 
-            FormManager.AbrirFormHija(this.panelContenedor, new frmRegistrarProducto());
+            frmRegistrarProducto formproductos = new frmRegistrarProducto(this.panelContenedor);
+            FormManager.AbrirFormHija(this.panelContenedor, formproductos);
 
         }
 

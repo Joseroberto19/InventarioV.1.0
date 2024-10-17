@@ -18,13 +18,17 @@ namespace ProyectoVenta.Formularios
 {
     public partial class frmRegistrarProducto : Form
     {
+        private Panel _panelContenedor;
+
         private static int _id = 0;
         private static int _indice = 0;
         
 
-        public frmRegistrarProducto()
+        public frmRegistrarProducto(Panel panelContenedor)
         {
             InitializeComponent();
+            _panelContenedor = panelContenedor; // Guardamos la referencia del panel de Form1
+
         }
 
         private void btnsalir_Click(object sender, EventArgs e)
@@ -311,8 +315,7 @@ namespace ProyectoVenta.Formularios
 
         private void btncargar_Click(object sender, EventArgs e)
         {
-            Inicio inicio = new Inicio();
-            FormManager.AbrirFormHija(inicio.panelContenedor, new frmCargarProducto());
+            FormManager.AbrirFormHija(_panelContenedor, new frmCargarProducto());
 
         }
     }

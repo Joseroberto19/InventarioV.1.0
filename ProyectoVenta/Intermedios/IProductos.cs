@@ -26,10 +26,11 @@ namespace ProyectoVenta.Intermedios
         }
 
         private void btnagregarproductos_Click(object sender, EventArgs e)
-        {
+        {/*
             FormularioVista = new frmRegistrarProducto();
             this.DialogResult = DialogResult.OK;
             this.Close();
+            */
         }
 
         private void btnvolver_Click(object sender, EventArgs e)
@@ -42,6 +43,11 @@ namespace ProyectoVenta.Intermedios
             FormularioVista = new frmCargarProducto();
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

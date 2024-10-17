@@ -68,6 +68,8 @@
             this.txtdescripcionproducto = new System.Windows.Forms.TextBox();
             this.btnbuscarproducto = new FontAwesome.Sharp.IconButton();
             this.lbltotal = new System.Windows.Forms.Label();
+            this.btnlistar = new FontAwesome.Sharp.IconButton();
+            this.btnbuscar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
@@ -496,12 +498,58 @@
             this.lbltotal.TabIndex = 160;
             this.lbltotal.Text = "0.00";
             // 
+            // btnlistar
+            // 
+            this.btnlistar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnlistar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlistar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnlistar.FlatAppearance.BorderSize = 2;
+            this.btnlistar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlistar.ForeColor = System.Drawing.Color.Black;
+            this.btnlistar.IconChar = FontAwesome.Sharp.IconChar.ListOl;
+            this.btnlistar.IconColor = System.Drawing.Color.Black;
+            this.btnlistar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnlistar.IconSize = 30;
+            this.btnlistar.Location = new System.Drawing.Point(455, 102);
+            this.btnlistar.Name = "btnlistar";
+            this.btnlistar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnlistar.Size = new System.Drawing.Size(45, 46);
+            this.btnlistar.TabIndex = 502;
+            this.btnlistar.Text = "Listar";
+            this.btnlistar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnlistar.UseVisualStyleBackColor = false;
+            this.btnlistar.Click += new System.EventHandler(this.btnlistar_Click);
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnbuscar.FlatAppearance.BorderSize = 2;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnbuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnbuscar.IconColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnbuscar.IconSize = 20;
+            this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnbuscar.Location = new System.Drawing.Point(511, 102);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(51, 47);
+            this.btnbuscar.TabIndex = 503;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // frmRegistrarSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 609);
             this.ControlBox = false;
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.btnlistar);
             this.Controls.Add(this.lbltotal);
             this.Controls.Add(this.btnbuscarproducto);
             this.Controls.Add(this.txtdescripcionproducto);
@@ -582,5 +630,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnit;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private FontAwesome.Sharp.IconButton btnlistar;
+        private FontAwesome.Sharp.IconButton btnbuscar;
     }
 }

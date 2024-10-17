@@ -1,4 +1,5 @@
-﻿using ProyectoVenta.Logica;
+﻿using ProyectoVenta.Formularios.Entradas;
+using ProyectoVenta.Logica;
 using ProyectoVenta.Modales;
 using ProyectoVenta.Modelo;
 using System;
@@ -16,6 +17,8 @@ namespace ProyectoVenta.Formularios.Salidas
 {
     public partial class frmRegistrarSalida : Form
     {
+        private Panel _panelContenedor;
+
         private static int _idproducto = 0;
         private static string _categoria = "";
         private static string _almacen = "";
@@ -24,9 +27,11 @@ namespace ProyectoVenta.Formularios.Salidas
 
         private static string _NombreUsuario = "";
 
-        public frmRegistrarSalida(string _usuario = "")
+        public frmRegistrarSalida(Panel panelContenedor , string _usuario = "")
         {
             _NombreUsuario = _usuario;
+            _panelContenedor = panelContenedor; // Guardamos la referencia del panel de Form1
+
             InitializeComponent();
         }
 
@@ -354,6 +359,18 @@ namespace ProyectoVenta.Formularios.Salidas
                 md.ShowDialog();
             }
 
+
+        }
+
+        private void btnlistar_Click(object sender, EventArgs e)
+        {
+            FormManager.AbrirFormHija(_panelContenedor, new frmListarSalidas());
+
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            FormManager.AbrirFormHija(_panelContenedor, new frmDetalleSalida());
 
         }
     }

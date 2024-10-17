@@ -73,6 +73,7 @@
             this.btnbuscarproveedor = new FontAwesome.Sharp.IconButton();
             this.label9 = new System.Windows.Forms.Label();
             this.btnlistar = new FontAwesome.Sharp.IconButton();
+            this.btnbuscar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             this.SuspendLayout();
@@ -524,6 +525,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(1089, 538);
             this.label9.TabIndex = 136;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // btnlistar
             // 
@@ -547,12 +549,35 @@
             this.btnlistar.UseVisualStyleBackColor = false;
             this.btnlistar.Click += new System.EventHandler(this.btnlistar_Click);
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnbuscar.FlatAppearance.BorderSize = 2;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnbuscar.ForeColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnbuscar.IconColor = System.Drawing.Color.Black;
+            this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnbuscar.IconSize = 20;
+            this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnbuscar.Location = new System.Drawing.Point(770, 108);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(51, 47);
+            this.btnbuscar.TabIndex = 502;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnbuscar.UseVisualStyleBackColor = false;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // frmRegistrarEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 609);
             this.ControlBox = false;
+            this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btnlistar);
             this.Controls.Add(this.txtprecioventa);
             this.Controls.Add(this.label11);
@@ -642,5 +667,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
         private System.Windows.Forms.Label label9;
         private FontAwesome.Sharp.IconButton btnlistar;
+        private FontAwesome.Sharp.IconButton btnbuscar;
     }
 }

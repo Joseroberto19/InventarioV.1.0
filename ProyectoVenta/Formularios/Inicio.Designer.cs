@@ -319,7 +319,7 @@
             this.btn2Configuracion.IconColor = System.Drawing.Color.White;
             this.btn2Configuracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn2Configuracion.IconSize = 30;
-            this.btn2Configuracion.Location = new System.Drawing.Point(1232, 2);
+            this.btn2Configuracion.Location = new System.Drawing.Point(1244, 2);
             this.btn2Configuracion.Name = "btn2Configuracion";
             this.btn2Configuracion.Size = new System.Drawing.Size(73, 64);
             this.btn2Configuracion.TabIndex = 13;

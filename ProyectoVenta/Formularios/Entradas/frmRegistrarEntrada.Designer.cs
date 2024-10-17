@@ -517,7 +517,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 593);
+            this.ClientSize = new System.Drawing.Size(1203, 609);
             this.ControlBox = false;
             this.Controls.Add(this.txtprecioventa);
             this.Controls.Add(this.label11);

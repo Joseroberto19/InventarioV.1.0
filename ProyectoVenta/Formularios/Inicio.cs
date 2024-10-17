@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using ProyectoVenta.Formularios.Clientes;
 using ProyectoVenta.Formularios.Proveedores;
 using ProyectoVenta.Formularios.Inventario;
+using ProyectoVenta.Formularios.Salidas;
 using ProyectoVenta.Modales;
 using FontAwesome.Sharp;
 using ProyectoVenta.Formularios.Entradas;
@@ -181,24 +182,28 @@ namespace ProyectoVenta.Formularios
 
         private void btnSalidas_Click(object sender, EventArgs e)
         {
-            using (var Iform = new ISalidas())
-            {
+            //using (var Iform = new ISalidas())
+            //{
 
-                Iform.BackColor = Color.Teal;
-                Iform._NombreUsuario = NombreUsuario;
-                var result = Iform.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    Form FormularioVista = Iform.FormularioVista;
-                    this.Hide();
-                    FormularioVista.Show();
-                    FormularioVista.FormClosing += Frm_Closing;
-                }
-            }
+            //    Iform.BackColor = Color.Teal;
+            //    Iform._NombreUsuario = NombreUsuario;
+            //    var result = Iform.ShowDialog();
+            //    if (result == DialogResult.OK)
+            //    {
+            //        Form FormularioVista = Iform.FormularioVista;
+            //        this.Hide();
+            //        FormularioVista.Show();
+            //        FormularioVista.FormClosing += Frm_Closing;
+            //    }
+            //}
+            AbrirFormHija(new frmRegistrarSalida());
+
         }
 
         private void btnentradas_Click(object sender, EventArgs e)
         {
+
+            /*
             using (var Iform = new IEntradas())
             {
 
@@ -213,6 +218,8 @@ namespace ProyectoVenta.Formularios
                     FormularioVista.FormClosing += Frm_Closing;
                 }
             }
+            */
+            AbrirFormHija(new frmRegistrarEntrada());
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -234,10 +241,13 @@ namespace ProyectoVenta.Formularios
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            frmInventario FormularioVista = new frmInventario();
-            this.Hide();
-            FormularioVista.Show();
-            FormularioVista.FormClosing += Frm_Closing;
+            //frmInventario FormularioVista = new frmInventario();
+            //this.Hide();
+            //FormularioVista.Show();
+            //FormularioVista.FormClosing += Frm_Closing;
+            AbrirFormHija(new frmInventario());
+
+
         }
 
         private void iconButton6_Click(object sender, EventArgs e)

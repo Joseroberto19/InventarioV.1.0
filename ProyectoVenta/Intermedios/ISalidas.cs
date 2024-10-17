@@ -32,9 +32,9 @@ namespace ProyectoVenta.Intermedios
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            FormularioVista = new frmRegistrarSalida(_NombreUsuario);
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            //FormularioVista = new frmRegistrarSalida(_NombreUsuario);
+            //this.DialogResult = DialogResult.OK;
+            //this.Close();
         }
 
         private void btnlistar_Click(object sender, EventArgs e)

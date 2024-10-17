@@ -22,6 +22,7 @@ namespace ProyectoVenta.Formularios
     public partial class Inicio : Form
     {
         public string NombreUsuario { get; set; }
+        public string _NombreUsuario { get; set; }
         public string NombreCompleto { get; set; }
         public string FechaHora { get; set; }
         public string Clave { get; set; }
@@ -197,7 +198,8 @@ namespace ProyectoVenta.Formularios
             //        FormularioVista.FormClosing += Frm_Closing;
             //    }
             //}
-            AbrirFormHija(new frmRegistrarSalida());
+            frmRegistrarSalida formproductos = new frmRegistrarSalida(this.panelContenedor, _NombreUsuario);
+            FormManager.AbrirFormHija(this.panelContenedor, formproductos);
 
         }
 
@@ -220,7 +222,10 @@ namespace ProyectoVenta.Formularios
                 }
             }
             */
-            AbrirFormHija(new frmRegistrarEntrada());
+            
+
+            frmRegistrarEntrada formproductos = new frmRegistrarEntrada(this.panelContenedor , _NombreUsuario);
+            FormManager.AbrirFormHija(this.panelContenedor, formproductos);
         }
 
         private void btnClientes_Click(object sender, EventArgs e)

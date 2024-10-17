@@ -27,9 +27,9 @@ namespace ProyectoVenta.Intermedios
 
         private void btnagregar_Click(object sender, EventArgs e)
         {
-            FormularioVista = new frmRegistrarEntrada(_NombreUsuario);
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            //FormularioVista = new frmRegistrarEntrada(_NombreUsuario);
+            //this.DialogResult = DialogResult.OK;
+            //this.Close();
         }
 
         private void btncerrar_Click(object sender, EventArgs e)
@@ -49,6 +49,11 @@ namespace ProyectoVenta.Intermedios
             FormularioVista = new frmDetalleEntrada();
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

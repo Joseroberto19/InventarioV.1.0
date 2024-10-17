@@ -83,7 +83,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(1315, 69);
+            this.label1.Size = new System.Drawing.Size(1397, 69);
             this.label1.TabIndex = 3;
             this.label1.Text = "INVENTARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -244,7 +244,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 69);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.statusStrip1.Size = new System.Drawing.Size(1315, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1397, 22);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -293,7 +293,7 @@
             this.btnsalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnsalir.Location = new System.Drawing.Point(1241, 2);
+            this.btnsalir.Location = new System.Drawing.Point(1323, 2);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(62, 64);
             this.btnsalir.TabIndex = 11;
@@ -319,7 +319,7 @@
             this.btn2Configuracion.IconColor = System.Drawing.Color.White;
             this.btn2Configuracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn2Configuracion.IconSize = 30;
-            this.btn2Configuracion.Location = new System.Drawing.Point(1162, 2);
+            this.btn2Configuracion.Location = new System.Drawing.Point(1244, 2);
             this.btn2Configuracion.Name = "btn2Configuracion";
             this.btn2Configuracion.Size = new System.Drawing.Size(73, 64);
             this.btn2Configuracion.TabIndex = 13;
@@ -332,7 +332,7 @@
             // 
             this.panelContenedor.Location = new System.Drawing.Point(188, 94);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1115, 632);
+            this.panelContenedor.Size = new System.Drawing.Size(1203, 609);
             this.panelContenedor.TabIndex = 14;
             // 
             // Inicio
@@ -340,7 +340,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1315, 748);
+            this.ClientSize = new System.Drawing.Size(1397, 748);
             this.ControlBox = false;
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.btn2Configuracion);

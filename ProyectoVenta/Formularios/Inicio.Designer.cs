@@ -44,17 +44,10 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblstatus2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabProductos = new System.Windows.Forms.TabPage();
-            this.tabProveedores = new System.Windows.Forms.TabPage();
-            this.tabClientes = new System.Windows.Forms.TabPage();
-            this.tabCompras = new System.Windows.Forms.TabPage();
-            this.tabVentas = new System.Windows.Forms.TabPage();
-            this.tabInventario = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn2Configuracion = new FontAwesome.Sharp.IconButton();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.statusStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnproductos
@@ -72,7 +65,7 @@
             this.btnproductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnproductos.IconSize = 50;
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnproductos.Location = new System.Drawing.Point(0, 92);
+            this.btnproductos.Location = new System.Drawing.Point(0, 94);
             this.btnproductos.Name = "btnproductos";
             this.btnproductos.Size = new System.Drawing.Size(167, 68);
             this.btnproductos.TabIndex = 2;
@@ -90,7 +83,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(814, 69);
+            this.label1.Size = new System.Drawing.Size(1315, 69);
             this.label1.TabIndex = 3;
             this.label1.Text = "INVENTARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,7 +104,7 @@
             this.btnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClientes.IconSize = 50;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnClientes.Location = new System.Drawing.Point(0, 240);
+            this.btnClientes.Location = new System.Drawing.Point(0, 242);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(167, 68);
             this.btnClientes.TabIndex = 4;
@@ -135,7 +128,7 @@
             this.btnSalidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalidas.IconSize = 50;
             this.btnSalidas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalidas.Location = new System.Drawing.Point(0, 388);
+            this.btnSalidas.Location = new System.Drawing.Point(0, 390);
             this.btnSalidas.Name = "btnSalidas";
             this.btnSalidas.Size = new System.Drawing.Size(167, 68);
             this.btnSalidas.TabIndex = 5;
@@ -159,7 +152,7 @@
             this.btnentradas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnentradas.IconSize = 50;
             this.btnentradas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnentradas.Location = new System.Drawing.Point(0, 314);
+            this.btnentradas.Location = new System.Drawing.Point(0, 316);
             this.btnentradas.Name = "btnentradas";
             this.btnentradas.Size = new System.Drawing.Size(167, 68);
             this.btnentradas.TabIndex = 6;
@@ -183,7 +176,7 @@
             this.btnProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProveedores.IconSize = 50;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 166);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 168);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(167, 68);
             this.btnProveedores.TabIndex = 7;
@@ -207,7 +200,7 @@
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnInventario.IconSize = 50;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventario.Location = new System.Drawing.Point(0, 462);
+            this.btnInventario.Location = new System.Drawing.Point(0, 464);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(167, 68);
             this.btnInventario.TabIndex = 8;
@@ -231,12 +224,12 @@
             this.btnConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnConfiguracion.IconSize = 50;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnConfiguracion.Location = new System.Drawing.Point(692, 449);
+            this.btnConfiguracion.Location = new System.Drawing.Point(0, 538);
             this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(122, 81);
+            this.btnConfiguracion.Size = new System.Drawing.Size(172, 68);
             this.btnConfiguracion.TabIndex = 9;
             this.btnConfiguracion.Text = "Configuracion";
-            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracion.UseVisualStyleBackColor = false;
             this.btnConfiguracion.Click += new System.EventHandler(this.iconButton6_Click);
             // 
@@ -251,7 +244,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 69);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.statusStrip1.Size = new System.Drawing.Size(814, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1315, 22);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -300,7 +293,7 @@
             this.btnsalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnsalir.Location = new System.Drawing.Point(706, 2);
+            this.btnsalir.Location = new System.Drawing.Point(1241, 2);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(62, 64);
             this.btnsalir.TabIndex = 11;
@@ -308,89 +301,6 @@
             this.btnsalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tabControl1.Controls.Add(this.tabProductos);
-            this.tabControl1.Controls.Add(this.tabProveedores);
-            this.tabControl1.Controls.Add(this.tabClientes);
-            this.tabControl1.Controls.Add(this.tabCompras);
-            this.tabControl1.Controls.Add(this.tabVentas);
-            this.tabControl1.Controls.Add(this.tabInventario);
-            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tabControl1.ImageList = this.imageList1;
-            this.tabControl1.Location = new System.Drawing.Point(0, 92);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.Padding = new System.Drawing.Point(6, 8);
-            this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(814, 484);
-            this.tabControl1.TabIndex = 12;
-            // 
-            // tabProductos
-            // 
-            this.tabProductos.ImageKey = "producto32.png";
-            this.tabProductos.Location = new System.Drawing.Point(49, 4);
-            this.tabProductos.Name = "tabProductos";
-            this.tabProductos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProductos.Size = new System.Drawing.Size(761, 476);
-            this.tabProductos.TabIndex = 0;
-            this.tabProductos.Text = "Productos";
-            this.tabProductos.UseVisualStyleBackColor = true;
-            this.tabProductos.Click += new System.EventHandler(this.tabProductos_Click);
-            // 
-            // tabProveedores
-            // 
-            this.tabProveedores.Location = new System.Drawing.Point(49, 4);
-            this.tabProveedores.Name = "tabProveedores";
-            this.tabProveedores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProveedores.Size = new System.Drawing.Size(761, 476);
-            this.tabProveedores.TabIndex = 1;
-            this.tabProveedores.Text = "Proveedores";
-            this.tabProveedores.UseVisualStyleBackColor = true;
-            // 
-            // tabClientes
-            // 
-            this.tabClientes.Location = new System.Drawing.Point(49, 4);
-            this.tabClientes.Name = "tabClientes";
-            this.tabClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabClientes.Size = new System.Drawing.Size(761, 476);
-            this.tabClientes.TabIndex = 2;
-            this.tabClientes.Text = "Clientes";
-            this.tabClientes.UseVisualStyleBackColor = true;
-            // 
-            // tabCompras
-            // 
-            this.tabCompras.Location = new System.Drawing.Point(49, 4);
-            this.tabCompras.Name = "tabCompras";
-            this.tabCompras.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCompras.Size = new System.Drawing.Size(761, 476);
-            this.tabCompras.TabIndex = 3;
-            this.tabCompras.Text = "Compras";
-            this.tabCompras.UseVisualStyleBackColor = true;
-            // 
-            // tabVentas
-            // 
-            this.tabVentas.Location = new System.Drawing.Point(49, 4);
-            this.tabVentas.Name = "tabVentas";
-            this.tabVentas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabVentas.Size = new System.Drawing.Size(761, 476);
-            this.tabVentas.TabIndex = 4;
-            this.tabVentas.Text = "Ventas";
-            this.tabVentas.UseVisualStyleBackColor = true;
-            // 
-            // tabInventario
-            // 
-            this.tabInventario.Location = new System.Drawing.Point(49, 4);
-            this.tabInventario.Name = "tabInventario";
-            this.tabInventario.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInventario.Size = new System.Drawing.Size(761, 476);
-            this.tabInventario.TabIndex = 5;
-            this.tabInventario.Text = "Inventario";
-            this.tabInventario.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -409,7 +319,7 @@
             this.btn2Configuracion.IconColor = System.Drawing.Color.White;
             this.btn2Configuracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn2Configuracion.IconSize = 30;
-            this.btn2Configuracion.Location = new System.Drawing.Point(606, 2);
+            this.btn2Configuracion.Location = new System.Drawing.Point(1162, 2);
             this.btn2Configuracion.Name = "btn2Configuracion";
             this.btn2Configuracion.Size = new System.Drawing.Size(73, 64);
             this.btn2Configuracion.TabIndex = 13;
@@ -418,15 +328,22 @@
             this.btn2Configuracion.UseVisualStyleBackColor = false;
             this.btn2Configuracion.Click += new System.EventHandler(this.btn2Configuracion_Click);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Location = new System.Drawing.Point(188, 94);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1115, 632);
+            this.panelContenedor.TabIndex = 14;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(814, 576);
+            this.ClientSize = new System.Drawing.Size(1315, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.btn2Configuracion);
-            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnConfiguracion);
@@ -446,7 +363,6 @@
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,14 +384,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private FontAwesome.Sharp.IconButton btnsalir;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabProductos;
-        private System.Windows.Forms.TabPage tabProveedores;
-        private System.Windows.Forms.TabPage tabClientes;
-        private System.Windows.Forms.TabPage tabCompras;
-        private System.Windows.Forms.TabPage tabVentas;
-        private System.Windows.Forms.TabPage tabInventario;
         private FontAwesome.Sharp.IconButton btn2Configuracion;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel panelContenedor;
     }
 }

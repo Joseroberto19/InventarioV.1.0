@@ -13,6 +13,7 @@ using ProyectoVenta.Formularios.Proveedores;
 using ProyectoVenta.Formularios.Inventario;
 using ProyectoVenta.Modales;
 using FontAwesome.Sharp;
+using ProyectoVenta.Formularios.Entradas;
 
 namespace ProyectoVenta.Formularios
 {
@@ -98,15 +99,6 @@ namespace ProyectoVenta.Formularios
         //LOAD
         private void Inicio_Load(object sender, EventArgs e)
         {
-            // Configura el TabControl
-            tabControl1.Alignment = TabAlignment.Left; // Coloca las pestañas a la izquierda
-            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed; // Habilita el dibujo personalizado
-            tabControl1.ItemSize = new Size(50, 125); // Ajusta el tamaño de las pestañas (ancho, alto)
-            tabControl1.TabPages[0].ImageIndex = 0; // Para la primera pestaña
-
-
-            // Maneja el evento DrawItem
-            tabControl1.DrawItem += tabControl1_DrawItem;
 
             lblstatus1.Text = string.Format("{0}", NombreUsuario);
             lblstatus2.Text = string.Format("{0}", FechaHora);
@@ -152,9 +144,21 @@ namespace ProyectoVenta.Formularios
             this.Show();
         }
 
+        private void AbrirFormHija(object formhija) {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        
+        }
+
         private void btnproductos_Click(object sender, EventArgs e)
         {
-
+            /*
             using (var Iform = new IProductos()) {
                 
                 Iform.BackColor = Color.Teal;
@@ -167,6 +171,9 @@ namespace ProyectoVenta.Formularios
                     FormularioVista.FormClosing += Frm_Closing;
                 }
             }
+            */
+
+            AbrirFormHija(new frmRegistrarEntrada());
 
         }
 
@@ -278,40 +285,6 @@ namespace ProyectoVenta.Formularios
 
         }
 
-        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            Graphics g = e.Graphics;
-            Rectangle tabArea = tabControl1.GetTabRect(e.Index);
-
-            // Dibuja la imagen si está asignada a la pestaña
-            if (tabControl1.ImageList != null)
-            {
-                int imageIndex = tabControl1.TabPages[e.Index].ImageIndex;
-                if (imageIndex >= 0)
-                {
-                    Image img = tabControl1.ImageList.Images[imageIndex];
-                    // Centra la imagen en la pestaña
-                    Point imgLocation = new Point(tabArea.X + 5, tabArea.Y + (tabArea.Height - img.Height) / 2);
-                    g.DrawImage(img, imgLocation);
-                }
-            }
-
-            // Establece el desplazamiento entre la imagen y el texto
-            int imageTextSpacing = 40; // Espacio entre la imagen y el texto
-
-            // Dibuja el texto sin rotación
-            string tabText = tabControl1.TabPages[e.Index].Text;
-            Font font = new Font(tabControl1.Font.FontFamily, 10, FontStyle.Regular);
-
-            // Ajustar la posición del texto para dejar más espacio desde la imagen
-            Rectangle textArea = new Rectangle(tabArea.X + imageTextSpacing, tabArea.Y, tabArea.Width - imageTextSpacing, tabArea.Height);
-            using (StringFormat stringFormat = new StringFormat())
-            {
-                stringFormat.Alignment = StringAlignment.Near;
-                stringFormat.LineAlignment = StringAlignment.Center;
-                g.DrawString(tabText, font, Brushes.Black, textArea, stringFormat);
-            }
-        }
 
         private void btn2Configuracion_Click(object sender, EventArgs e)
         {

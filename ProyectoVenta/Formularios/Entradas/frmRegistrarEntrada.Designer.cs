@@ -71,6 +71,8 @@
             this.btnagregar = new FontAwesome.Sharp.IconButton();
             this.btnbuscarproducto = new FontAwesome.Sharp.IconButton();
             this.btnbuscarproveedor = new FontAwesome.Sharp.IconButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnlistar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcantidad)).BeginInit();
             this.SuspendLayout();
@@ -513,12 +515,45 @@
             this.btnbuscarproveedor.UseVisualStyleBackColor = true;
             this.btnbuscarproveedor.Click += new System.EventHandler(this.btnbuscarproveedor_Click);
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(6, 45);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(1089, 538);
+            this.label9.TabIndex = 136;
+            // 
+            // btnlistar
+            // 
+            this.btnlistar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnlistar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlistar.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
+            this.btnlistar.FlatAppearance.BorderSize = 2;
+            this.btnlistar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlistar.ForeColor = System.Drawing.Color.Black;
+            this.btnlistar.IconChar = FontAwesome.Sharp.IconChar.ListOl;
+            this.btnlistar.IconColor = System.Drawing.Color.Black;
+            this.btnlistar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnlistar.IconSize = 30;
+            this.btnlistar.Location = new System.Drawing.Point(719, 108);
+            this.btnlistar.Name = "btnlistar";
+            this.btnlistar.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnlistar.Size = new System.Drawing.Size(45, 46);
+            this.btnlistar.TabIndex = 501;
+            this.btnlistar.Text = "Listar";
+            this.btnlistar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnlistar.UseVisualStyleBackColor = false;
+            this.btnlistar.Click += new System.EventHandler(this.btnlistar_Click);
+            // 
             // frmRegistrarEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1203, 609);
             this.ControlBox = false;
+            this.Controls.Add(this.btnlistar);
             this.Controls.Add(this.txtprecioventa);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnsalir);
@@ -548,6 +583,7 @@
             this.Controls.Add(this.txtdocproveedor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -604,5 +640,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn SubTotal;
+        private System.Windows.Forms.Label label9;
+        private FontAwesome.Sharp.IconButton btnlistar;
     }
 }

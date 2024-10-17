@@ -225,18 +225,14 @@ namespace ProyectoVenta.Formularios
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            frmClientes FormularioVista = new frmClientes();
-            this.Hide();
-            FormularioVista.Show();
-            FormularioVista.FormClosing += Frm_Closing;
+            FormManager.AbrirFormHija(this.panelContenedor, new frmClientes());
+
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            frmProveedores FormularioVista = new frmProveedores();
-            this.Hide();
-            FormularioVista.Show();
-            FormularioVista.FormClosing += Frm_Closing;
+
+            FormManager.AbrirFormHija(this.panelContenedor, new frmProveedores());
 
         }
 

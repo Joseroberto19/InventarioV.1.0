@@ -173,7 +173,7 @@ namespace ProyectoVenta.Formularios
             }
             */
 
-            AbrirFormHija(new frmRegistrarEntrada());
+            AbrirFormHija(new frmRegistrarProducto());
 
         }
 

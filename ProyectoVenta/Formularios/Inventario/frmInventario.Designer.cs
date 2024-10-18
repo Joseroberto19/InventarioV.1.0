@@ -123,7 +123,7 @@
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(21, 81);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1140, 10);
+            this.groupBox2.Size = new System.Drawing.Size(1015, 10);
             this.groupBox2.TabIndex = 153;
             this.groupBox2.TabStop = false;
             // 
@@ -156,7 +156,7 @@
             this.btnlimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnlimpiar.IconSize = 17;
             this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnlimpiar.Location = new System.Drawing.Point(1125, 102);
+            this.btnlimpiar.Location = new System.Drawing.Point(806, 105);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(37, 21);
             this.btnlimpiar.TabIndex = 151;
@@ -174,7 +174,7 @@
             this.btnbusqueda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbusqueda.IconSize = 17;
             this.btnbusqueda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbusqueda.Location = new System.Drawing.Point(1082, 102);
+            this.btnbusqueda.Location = new System.Drawing.Point(763, 105);
             this.btnbusqueda.Name = "btnbusqueda";
             this.btnbusqueda.Size = new System.Drawing.Size(37, 21);
             this.btnbusqueda.TabIndex = 150;
@@ -189,7 +189,7 @@
             this.cbobuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbobuscar.FormattingEnabled = true;
-            this.cbobuscar.Location = new System.Drawing.Point(790, 102);
+            this.cbobuscar.Location = new System.Drawing.Point(471, 104);
             this.cbobuscar.Name = "cbobuscar";
             this.cbobuscar.Size = new System.Drawing.Size(145, 21);
             this.cbobuscar.TabIndex = 148;
@@ -197,7 +197,7 @@
             // txtbuscar
             // 
             this.txtbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscar.Location = new System.Drawing.Point(941, 102);
+            this.txtbuscar.Location = new System.Drawing.Point(622, 104);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(135, 21);
             this.txtbuscar.TabIndex = 149;
@@ -207,7 +207,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(715, 105);
+            this.label12.Location = new System.Drawing.Point(396, 107);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 15);
             this.label12.TabIndex = 147;
@@ -224,7 +224,7 @@
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnsalir.IconSize = 24;
-            this.btnsalir.Location = new System.Drawing.Point(1109, 8);
+            this.btnsalir.Location = new System.Drawing.Point(967, 9);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(69, 31);
             this.btnsalir.TabIndex = 146;
@@ -268,7 +268,7 @@
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 24;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1141, 412);
+            this.dgvdata.Size = new System.Drawing.Size(1015, 412);
             this.dgvdata.TabIndex = 143;
             // 
             // CodigoProducto
@@ -348,7 +348,7 @@
             this.label2.Location = new System.Drawing.Point(4, 3);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(1178, 41);
+            this.label2.Size = new System.Drawing.Size(1047, 41);
             this.label2.TabIndex = 145;
             this.label2.Text = "Inventario";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,14 +360,14 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(4, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1178, 521);
+            this.label1.Size = new System.Drawing.Size(1047, 521);
             this.label1.TabIndex = 144;
             // 
             // frmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 570);
+            this.ClientSize = new System.Drawing.Size(1055, 570);
             this.ControlBox = false;
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtfechafin);

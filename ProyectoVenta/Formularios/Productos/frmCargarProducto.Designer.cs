@@ -59,10 +59,10 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 6);
+            this.label2.Location = new System.Drawing.Point(6, 2);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(1176, 41);
+            this.label2.Size = new System.Drawing.Size(1045, 41);
             this.label2.TabIndex = 105;
             this.label2.Text = "Cargar Producto";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -72,14 +72,14 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(6, 46);
+            this.label1.Location = new System.Drawing.Point(6, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1176, 523);
+            this.label1.Size = new System.Drawing.Size(1045, 515);
             this.label1.TabIndex = 104;
             // 
             // txtarchivo
             // 
-            this.txtarchivo.Location = new System.Drawing.Point(328, 52);
+            this.txtarchivo.Location = new System.Drawing.Point(293, 50);
             this.txtarchivo.Name = "txtarchivo";
             this.txtarchivo.ReadOnly = true;
             this.txtarchivo.Size = new System.Drawing.Size(344, 20);
@@ -89,7 +89,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(214, 55);
+            this.label9.Location = new System.Drawing.Point(179, 53);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 13);
             this.label9.TabIndex = 107;
@@ -103,7 +103,7 @@
             this.btncargar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btncargar.IconSize = 18;
             this.btncargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btncargar.Location = new System.Drawing.Point(678, 52);
+            this.btncargar.Location = new System.Drawing.Point(643, 50);
             this.btncargar.Name = "btncargar";
             this.btncargar.Size = new System.Drawing.Size(76, 21);
             this.btncargar.TabIndex = 111;
@@ -119,7 +119,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(214, 124);
+            this.label7.Location = new System.Drawing.Point(179, 122);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 15);
             this.label7.TabIndex = 112;
@@ -128,7 +128,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(217, 101);
+            this.groupBox1.Location = new System.Drawing.Point(182, 99);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(727, 10);
             this.groupBox1.TabIndex = 113;
@@ -153,7 +153,7 @@
             this.Codigo,
             this.Mensaje,
             this.Estado});
-            this.dgvdata.Location = new System.Drawing.Point(217, 151);
+            this.dgvdata.Location = new System.Drawing.Point(182, 149);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -213,7 +213,7 @@
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnsalir.IconSize = 24;
-            this.btnsalir.Location = new System.Drawing.Point(1106, 12);
+            this.btnsalir.Location = new System.Drawing.Point(974, 8);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(69, 31);
             this.btnsalir.TabIndex = 131;
@@ -230,7 +230,7 @@
             this.btndescargar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btndescargar.IconSize = 17;
             this.btndescargar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btndescargar.Location = new System.Drawing.Point(816, 122);
+            this.btndescargar.Location = new System.Drawing.Point(781, 120);
             this.btndescargar.Name = "btndescargar";
             this.btndescargar.Size = new System.Drawing.Size(128, 21);
             this.btndescargar.TabIndex = 132;
@@ -245,7 +245,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(264, 81);
+            this.label3.Location = new System.Drawing.Point(229, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 133;
@@ -256,7 +256,7 @@
             this.lblresumen.AutoSize = true;
             this.lblresumen.BackColor = System.Drawing.Color.White;
             this.lblresumen.ForeColor = System.Drawing.Color.Blue;
-            this.lblresumen.Location = new System.Drawing.Point(328, 81);
+            this.lblresumen.Location = new System.Drawing.Point(293, 79);
             this.lblresumen.Name = "lblresumen";
             this.lblresumen.Size = new System.Drawing.Size(57, 13);
             this.lblresumen.TabIndex = 134;
@@ -270,7 +270,7 @@
             this.btnprocesar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnprocesar.IconSize = 18;
             this.btnprocesar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnprocesar.Location = new System.Drawing.Point(760, 52);
+            this.btnprocesar.Location = new System.Drawing.Point(725, 50);
             this.btnprocesar.Name = "btnprocesar";
             this.btnprocesar.Size = new System.Drawing.Size(76, 21);
             this.btnprocesar.TabIndex = 135;
@@ -289,7 +289,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(842, 52);
+            this.progressBar1.Location = new System.Drawing.Point(807, 50);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(102, 21);
             this.progressBar1.TabIndex = 136;
@@ -298,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 570);
+            this.ClientSize = new System.Drawing.Size(1055, 570);
             this.ControlBox = false;
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnprocesar);

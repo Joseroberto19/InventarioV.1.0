@@ -39,6 +39,8 @@ namespace ProyectoVenta.Formularios
             lblstatus1.ForeColor = Color.FromArgb(70, 70, 70); // Gris oscuro para el texto
             toolStripStatusLabel2.ForeColor = Color.FromArgb(70, 70, 70);
             lblstatus2.ForeColor = Color.FromArgb(70, 70, 70);
+            tableLayoutPanel2.BackColor = Color.FromArgb(52, 152, 219);//Azul Claro
+
 
 
             // Estilizando los botones con íconos (btnEntradas)

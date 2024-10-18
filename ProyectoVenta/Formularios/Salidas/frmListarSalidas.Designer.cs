@@ -72,7 +72,7 @@
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 17;
             this.btnborrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnborrar.Location = new System.Drawing.Point(1034, 109);
+            this.btnborrar.Location = new System.Drawing.Point(804, 111);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(37, 21);
             this.btnborrar.TabIndex = 117;
@@ -90,7 +90,7 @@
             this.btnbusqueda.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbusqueda.IconSize = 17;
             this.btnbusqueda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbusqueda.Location = new System.Drawing.Point(993, 109);
+            this.btnbusqueda.Location = new System.Drawing.Point(761, 111);
             this.btnbusqueda.Name = "btnbusqueda";
             this.btnbusqueda.Size = new System.Drawing.Size(37, 21);
             this.btnbusqueda.TabIndex = 116;
@@ -105,7 +105,7 @@
             this.cbobuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbobuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbobuscar.FormattingEnabled = true;
-            this.cbobuscar.Location = new System.Drawing.Point(701, 109);
+            this.cbobuscar.Location = new System.Drawing.Point(451, 111);
             this.cbobuscar.Name = "cbobuscar";
             this.cbobuscar.Size = new System.Drawing.Size(145, 21);
             this.cbobuscar.TabIndex = 114;
@@ -113,7 +113,7 @@
             // txtbuscar
             // 
             this.txtbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbuscar.Location = new System.Drawing.Point(852, 109);
+            this.txtbuscar.Location = new System.Drawing.Point(602, 111);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(135, 21);
             this.txtbuscar.TabIndex = 115;
@@ -123,11 +123,12 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(626, 112);
+            this.label12.Location = new System.Drawing.Point(379, 116);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 15);
             this.label12.TabIndex = 113;
             this.label12.Text = "Buscar por:";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // dgvdata
             // 
@@ -156,7 +157,7 @@
             this.PrecioVenta,
             this.Cantidad,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(17, 143);
+            this.dgvdata.Location = new System.Drawing.Point(47, 138);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -167,7 +168,7 @@
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 24;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(1054, 423);
+            this.dgvdata.Size = new System.Drawing.Size(959, 423);
             this.dgvdata.TabIndex = 112;
             // 
             // FechaRegistro
@@ -276,7 +277,7 @@
             this.btnexportar.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnexportar.IconSize = 17;
             this.btnexportar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnexportar.Location = new System.Drawing.Point(17, 108);
+            this.btnexportar.Location = new System.Drawing.Point(73, 109);
             this.btnexportar.Name = "btnexportar";
             this.btnexportar.Size = new System.Drawing.Size(118, 21);
             this.btnexportar.TabIndex = 118;
@@ -295,7 +296,7 @@
             this.label2.Location = new System.Drawing.Point(1, 1);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(1087, 41);
+            this.label2.Size = new System.Drawing.Size(1049, 41);
             this.label2.TabIndex = 120;
             this.label2.Text = "Lista de Salidas";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -305,17 +306,17 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1, 41);
+            this.label1.Location = new System.Drawing.Point(1, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1087, 539);
+            this.label1.Size = new System.Drawing.Size(1049, 529);
             this.label1.TabIndex = 119;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(17, 88);
+            this.groupBox2.Location = new System.Drawing.Point(73, 89);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1055, 10);
+            this.groupBox2.Size = new System.Drawing.Size(959, 10);
             this.groupBox2.TabIndex = 123;
             this.groupBox2.TabStop = false;
             // 
@@ -324,7 +325,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(207, 63);
+            this.label3.Location = new System.Drawing.Point(263, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 15);
             this.label3.TabIndex = 124;
@@ -334,7 +335,7 @@
             // 
             this.txtfechainicio.CustomFormat = "dd/MM/yyyy";
             this.txtfechainicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechainicio.Location = new System.Drawing.Point(89, 63);
+            this.txtfechainicio.Location = new System.Drawing.Point(145, 64);
             this.txtfechainicio.Name = "txtfechainicio";
             this.txtfechainicio.Size = new System.Drawing.Size(97, 20);
             this.txtfechainicio.TabIndex = 125;
@@ -343,7 +344,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(15, 65);
+            this.label4.Location = new System.Drawing.Point(71, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 126;
@@ -353,7 +354,7 @@
             // 
             this.txtfechafin.CustomFormat = "dd/MM/yyyy";
             this.txtfechafin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtfechafin.Location = new System.Drawing.Point(277, 63);
+            this.txtfechafin.Location = new System.Drawing.Point(333, 64);
             this.txtfechafin.Name = "txtfechafin";
             this.txtfechafin.Size = new System.Drawing.Size(97, 20);
             this.txtfechafin.TabIndex = 127;
@@ -367,7 +368,7 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 17;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscar.Location = new System.Drawing.Point(395, 63);
+            this.btnbuscar.Location = new System.Drawing.Point(451, 64);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(99, 21);
             this.btnbuscar.TabIndex = 128;
@@ -388,7 +389,7 @@
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnsalir.IconSize = 24;
-            this.btnsalir.Location = new System.Drawing.Point(1013, 7);
+            this.btnsalir.Location = new System.Drawing.Point(974, 7);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(69, 31);
             this.btnsalir.TabIndex = 129;
@@ -402,7 +403,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1203, 609);
+            this.ClientSize = new System.Drawing.Size(1055, 570);
             this.ControlBox = false;
             this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.btnbuscar);

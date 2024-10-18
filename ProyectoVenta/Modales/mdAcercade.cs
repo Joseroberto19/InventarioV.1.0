@@ -16,5 +16,10 @@ namespace ProyectoVenta.Modales
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

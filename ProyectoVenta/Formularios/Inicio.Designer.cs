@@ -37,7 +37,6 @@
             this.btnentradas = new FontAwesome.Sharp.IconButton();
             this.btnProveedores = new FontAwesome.Sharp.IconButton();
             this.btnInventario = new FontAwesome.Sharp.IconButton();
-            this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblstatus1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -47,7 +46,12 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn2Configuracion = new FontAwesome.Sharp.IconButton();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnproductos
@@ -65,9 +69,9 @@
             this.btnproductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnproductos.IconSize = 50;
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnproductos.Location = new System.Drawing.Point(0, 94);
+            this.btnproductos.Location = new System.Drawing.Point(3, 3);
             this.btnproductos.Name = "btnproductos";
-            this.btnproductos.Size = new System.Drawing.Size(167, 68);
+            this.btnproductos.Size = new System.Drawing.Size(167, 64);
             this.btnproductos.TabIndex = 2;
             this.btnproductos.Text = "Productos";
             this.btnproductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -83,7 +87,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(1397, 69);
+            this.label1.Size = new System.Drawing.Size(1264, 69);
             this.label1.TabIndex = 3;
             this.label1.Text = "INVENTARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -104,9 +108,9 @@
             this.btnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClientes.IconSize = 50;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnClientes.Location = new System.Drawing.Point(0, 242);
+            this.btnClientes.Location = new System.Drawing.Point(3, 143);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(167, 68);
+            this.btnClientes.Size = new System.Drawing.Size(167, 64);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -128,9 +132,9 @@
             this.btnSalidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalidas.IconSize = 50;
             this.btnSalidas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalidas.Location = new System.Drawing.Point(0, 390);
+            this.btnSalidas.Location = new System.Drawing.Point(3, 283);
             this.btnSalidas.Name = "btnSalidas";
-            this.btnSalidas.Size = new System.Drawing.Size(167, 68);
+            this.btnSalidas.Size = new System.Drawing.Size(167, 64);
             this.btnSalidas.TabIndex = 5;
             this.btnSalidas.Text = "Salidas";
             this.btnSalidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,9 +156,9 @@
             this.btnentradas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnentradas.IconSize = 50;
             this.btnentradas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnentradas.Location = new System.Drawing.Point(0, 316);
+            this.btnentradas.Location = new System.Drawing.Point(3, 213);
             this.btnentradas.Name = "btnentradas";
-            this.btnentradas.Size = new System.Drawing.Size(167, 68);
+            this.btnentradas.Size = new System.Drawing.Size(167, 64);
             this.btnentradas.TabIndex = 6;
             this.btnentradas.Text = "Entradas";
             this.btnentradas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -176,9 +180,9 @@
             this.btnProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProveedores.IconSize = 50;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 168);
+            this.btnProveedores.Location = new System.Drawing.Point(3, 73);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(167, 68);
+            this.btnProveedores.Size = new System.Drawing.Size(167, 64);
             this.btnProveedores.TabIndex = 7;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -200,7 +204,7 @@
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnInventario.IconSize = 50;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventario.Location = new System.Drawing.Point(0, 464);
+            this.btnInventario.Location = new System.Drawing.Point(3, 353);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(167, 68);
             this.btnInventario.TabIndex = 8;
@@ -208,30 +212,6 @@
             this.btnInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnInventario.UseVisualStyleBackColor = false;
             this.btnInventario.Click += new System.EventHandler(this.iconButton5_Click);
-            // 
-            // btnConfiguracion
-            // 
-            this.btnConfiguracion.AutoSize = true;
-            this.btnConfiguracion.BackColor = System.Drawing.SystemColors.Control;
-            this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfiguracion.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
-            this.btnConfiguracion.FlatAppearance.BorderSize = 2;
-            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfiguracion.ForeColor = System.Drawing.Color.Black;
-            this.btnConfiguracion.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            this.btnConfiguracion.IconColor = System.Drawing.Color.Black;
-            this.btnConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnConfiguracion.IconSize = 50;
-            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnConfiguracion.Location = new System.Drawing.Point(0, 538);
-            this.btnConfiguracion.Name = "btnConfiguracion";
-            this.btnConfiguracion.Size = new System.Drawing.Size(172, 68);
-            this.btnConfiguracion.TabIndex = 9;
-            this.btnConfiguracion.Text = "Configuracion";
-            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnConfiguracion.UseVisualStyleBackColor = false;
-            this.btnConfiguracion.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // statusStrip1
             // 
@@ -244,7 +224,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 69);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.statusStrip1.Size = new System.Drawing.Size(1397, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1264, 22);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -285,6 +265,7 @@
             // 
             // btnsalir
             // 
+            this.btnsalir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnsalir.BackColor = System.Drawing.Color.Transparent;
             this.btnsalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -293,9 +274,9 @@
             this.btnsalir.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnsalir.Location = new System.Drawing.Point(1323, 2);
+            this.btnsalir.Location = new System.Drawing.Point(119, 3);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(62, 64);
+            this.btnsalir.Size = new System.Drawing.Size(62, 60);
             this.btnsalir.TabIndex = 11;
             this.btnsalir.Text = "Salir";
             this.btnsalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -310,6 +291,7 @@
             // 
             // btn2Configuracion
             // 
+            this.btn2Configuracion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn2Configuracion.BackColor = System.Drawing.Color.Black;
             this.btn2Configuracion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn2Configuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -319,9 +301,9 @@
             this.btn2Configuracion.IconColor = System.Drawing.Color.White;
             this.btn2Configuracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn2Configuracion.IconSize = 30;
-            this.btn2Configuracion.Location = new System.Drawing.Point(1244, 2);
+            this.btn2Configuracion.Location = new System.Drawing.Point(13, 3);
             this.btn2Configuracion.Name = "btn2Configuracion";
-            this.btn2Configuracion.Size = new System.Drawing.Size(73, 64);
+            this.btn2Configuracion.Size = new System.Drawing.Size(73, 60);
             this.btn2Configuracion.TabIndex = 13;
             this.btn2Configuracion.Text = "Configuracion";
             this.btn2Configuracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -332,38 +314,98 @@
             // 
             this.panelContenedor.Location = new System.Drawing.Point(188, 94);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1203, 609);
+            this.panelContenedor.Size = new System.Drawing.Size(1055, 570);
             this.panelContenedor.TabIndex = 14;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.btnproductos, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnProveedores, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnClientes, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnentradas, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnSalidas, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnInventario, 0, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 91);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(182, 425);
+            this.tableLayoutPanel1.TabIndex = 15;
+            // 
+            // btnConfiguracion
+            // 
+            this.btnConfiguracion.AutoSize = true;
+            this.btnConfiguracion.BackColor = System.Drawing.SystemColors.Control;
+            this.btnConfiguracion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfiguracion.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            this.btnConfiguracion.FlatAppearance.BorderSize = 2;
+            this.btnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.Black;
+            this.btnConfiguracion.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.btnConfiguracion.IconColor = System.Drawing.Color.Black;
+            this.btnConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnConfiguracion.IconSize = 50;
+            this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnConfiguracion.Location = new System.Drawing.Point(6, 525);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(172, 68);
+            this.btnConfiguracion.TabIndex = 9;
+            this.btnConfiguracion.Text = "Configuracion";
+            this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Click += new System.EventHandler(this.iconButton6_Click);
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.btn2Configuracion, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnsalir, 1, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1043, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 66);
+            this.tableLayoutPanel2.TabIndex = 16;
             // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1397, 748);
+            this.ClientSize = new System.Drawing.Size(1264, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panelContenedor);
-            this.Controls.Add(this.btn2Configuracion);
-            this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btnConfiguracion);
-            this.Controls.Add(this.btnInventario);
-            this.Controls.Add(this.btnProveedores);
-            this.Controls.Add(this.btnentradas);
-            this.Controls.Add(this.btnSalidas);
-            this.Controls.Add(this.btnClientes);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnproductos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(816, 578);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ".: Inicio :.";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,7 +420,6 @@
         private FontAwesome.Sharp.IconButton btnentradas;
         private FontAwesome.Sharp.IconButton btnProveedores;
         private FontAwesome.Sharp.IconButton btnInventario;
-        private FontAwesome.Sharp.IconButton btnConfiguracion;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblstatus1;
         private System.Windows.Forms.ToolStripStatusLabel lblstatus2;
@@ -388,5 +429,8 @@
         private FontAwesome.Sharp.IconButton btn2Configuracion;
         private System.Windows.Forms.ImageList imageList1;
         public System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private FontAwesome.Sharp.IconButton btnConfiguracion;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

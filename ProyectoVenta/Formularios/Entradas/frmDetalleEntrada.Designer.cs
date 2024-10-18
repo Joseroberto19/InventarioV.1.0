@@ -74,7 +74,7 @@
             this.btndescargarpdf.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btndescargarpdf.IconSize = 18;
             this.btndescargarpdf.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btndescargarpdf.Location = new System.Drawing.Point(575, 493);
+            this.btndescargarpdf.Location = new System.Drawing.Point(864, 493);
             this.btndescargarpdf.Name = "btndescargarpdf";
             this.btndescargarpdf.Padding = new System.Windows.Forms.Padding(0, 1, 0, 0);
             this.btndescargarpdf.Size = new System.Drawing.Size(135, 28);
@@ -90,7 +90,7 @@
             this.chkocultarprecios.AutoSize = true;
             this.chkocultarprecios.BackColor = System.Drawing.Color.White;
             this.chkocultarprecios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chkocultarprecios.Location = new System.Drawing.Point(612, 182);
+            this.chkocultarprecios.Location = new System.Drawing.Point(675, 184);
             this.chkocultarprecios.Name = "chkocultarprecios";
             this.chkocultarprecios.Size = new System.Drawing.Size(98, 17);
             this.chkocultarprecios.TabIndex = 5;
@@ -121,7 +121,7 @@
             this.PrecioCompra,
             this.PrecioVenta,
             this.SubTotal});
-            this.dgvdata.Location = new System.Drawing.Point(24, 205);
+            this.dgvdata.Location = new System.Drawing.Point(85, 207);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -132,7 +132,7 @@
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdata.RowTemplate.Height = 24;
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.Size = new System.Drawing.Size(686, 280);
+            this.dgvdata.Size = new System.Drawing.Size(914, 280);
             this.dgvdata.TabIndex = 6;
             // 
             // Codigo
@@ -202,7 +202,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(23, 157);
+            this.groupBox1.Location = new System.Drawing.Point(86, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(687, 10);
             this.groupBox1.TabIndex = 161;
@@ -214,7 +214,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(21, 178);
+            this.label7.Location = new System.Drawing.Point(84, 180);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 15);
             this.label7.TabIndex = 168;
@@ -228,7 +228,7 @@
             this.btnbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnbuscar.IconSize = 17;
             this.btnbuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnbuscar.Location = new System.Drawing.Point(257, 59);
+            this.btnbuscar.Location = new System.Drawing.Point(320, 61);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(99, 21);
             this.btnbuscar.TabIndex = 2;
@@ -249,7 +249,7 @@
             this.btnsalir.IconColor = System.Drawing.Color.White;
             this.btnsalir.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnsalir.IconSize = 24;
-            this.btnsalir.Location = new System.Drawing.Point(654, 9);
+            this.btnsalir.Location = new System.Drawing.Point(973, 9);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Size = new System.Drawing.Size(70, 31);
             this.btnsalir.TabIndex = 166;
@@ -260,7 +260,7 @@
             // 
             // txtnombreproveedor
             // 
-            this.txtnombreproveedor.Location = new System.Drawing.Point(359, 131);
+            this.txtnombreproveedor.Location = new System.Drawing.Point(422, 133);
             this.txtnombreproveedor.Name = "txtnombreproveedor";
             this.txtnombreproveedor.ReadOnly = true;
             this.txtnombreproveedor.Size = new System.Drawing.Size(201, 20);
@@ -270,7 +270,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(254, 134);
+            this.label10.Location = new System.Drawing.Point(317, 136);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(102, 13);
             this.label10.TabIndex = 164;
@@ -279,7 +279,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(22, 85);
+            this.groupBox2.Location = new System.Drawing.Point(85, 87);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(688, 10);
             this.groupBox2.TabIndex = 160;
@@ -290,7 +290,7 @@
             this.lbltotal.AutoSize = true;
             this.lbltotal.BackColor = System.Drawing.Color.White;
             this.lbltotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(73, 499);
+            this.lbltotal.Location = new System.Drawing.Point(162, 499);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(35, 15);
             this.lbltotal.TabIndex = 163;
@@ -301,7 +301,7 @@
             this.lbltextototal.AutoSize = true;
             this.lbltextototal.BackColor = System.Drawing.Color.White;
             this.lbltextototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextototal.Location = new System.Drawing.Point(24, 499);
+            this.lbltextototal.Location = new System.Drawing.Point(89, 499);
             this.lbltextototal.Name = "lbltextototal";
             this.lbltextototal.Size = new System.Drawing.Size(43, 15);
             this.lbltextototal.TabIndex = 162;
@@ -311,7 +311,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(25, 62);
+            this.label26.Location = new System.Drawing.Point(88, 64);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(95, 13);
             this.label26.TabIndex = 158;
@@ -319,14 +319,14 @@
             // 
             // txtnumerodocumento
             // 
-            this.txtnumerodocumento.Location = new System.Drawing.Point(122, 59);
+            this.txtnumerodocumento.Location = new System.Drawing.Point(185, 61);
             this.txtnumerodocumento.Name = "txtnumerodocumento";
             this.txtnumerodocumento.Size = new System.Drawing.Size(129, 20);
             this.txtnumerodocumento.TabIndex = 1;
             // 
             // txtdocumentoproveedor
             // 
-            this.txtdocumentoproveedor.Location = new System.Drawing.Point(115, 131);
+            this.txtdocumentoproveedor.Location = new System.Drawing.Point(178, 133);
             this.txtdocumentoproveedor.Name = "txtdocumentoproveedor";
             this.txtdocumentoproveedor.ReadOnly = true;
             this.txtdocumentoproveedor.Size = new System.Drawing.Size(128, 20);
@@ -336,7 +336,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(26, 134);
+            this.label5.Location = new System.Drawing.Point(89, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 13);
             this.label5.TabIndex = 156;
@@ -351,7 +351,7 @@
             this.label2.Location = new System.Drawing.Point(4, 3);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(725, 41);
+            this.label2.Size = new System.Drawing.Size(1045, 41);
             this.label2.TabIndex = 155;
             this.label2.Text = "Buscar Entrada";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,12 +363,12 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(4, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(725, 488);
+            this.label1.Size = new System.Drawing.Size(1045, 517);
             this.label1.TabIndex = 154;
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(359, 101);
+            this.txtusuario.Location = new System.Drawing.Point(422, 103);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.ReadOnly = true;
             this.txtusuario.Size = new System.Drawing.Size(201, 20);
@@ -378,7 +378,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(254, 104);
+            this.label3.Location = new System.Drawing.Point(317, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 172;
@@ -386,7 +386,7 @@
             // 
             // txtfecha
             // 
-            this.txtfecha.Location = new System.Drawing.Point(115, 101);
+            this.txtfecha.Location = new System.Drawing.Point(178, 103);
             this.txtfecha.Name = "txtfecha";
             this.txtfecha.ReadOnly = true;
             this.txtfecha.Size = new System.Drawing.Size(128, 20);
@@ -396,7 +396,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(26, 104);
+            this.label4.Location = new System.Drawing.Point(89, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 171;
@@ -409,7 +409,7 @@
             this.btnborrar.IconColor = System.Drawing.Color.Black;
             this.btnborrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnborrar.IconSize = 20;
-            this.btnborrar.Location = new System.Drawing.Point(362, 59);
+            this.btnborrar.Location = new System.Drawing.Point(425, 61);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(109, 21);
             this.btnborrar.TabIndex = 173;
@@ -424,7 +424,7 @@
             this.lblnrodocumento.AutoSize = true;
             this.lblnrodocumento.BackColor = System.Drawing.Color.White;
             this.lblnrodocumento.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblnrodocumento.Location = new System.Drawing.Point(487, 63);
+            this.lblnrodocumento.Location = new System.Drawing.Point(550, 65);
             this.lblnrodocumento.Name = "lblnrodocumento";
             this.lblnrodocumento.Size = new System.Drawing.Size(85, 13);
             this.lblnrodocumento.TabIndex = 174;
@@ -434,7 +434,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 609);
+            this.ClientSize = new System.Drawing.Size(1055, 570);
             this.ControlBox = false;
             this.Controls.Add(this.lblnrodocumento);
             this.Controls.Add(this.btnborrar);

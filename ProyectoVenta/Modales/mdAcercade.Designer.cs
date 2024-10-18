@@ -41,20 +41,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(16, 274);
+            this.label5.Location = new System.Drawing.Point(12, 308);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 17);
+            this.label5.Size = new System.Drawing.Size(77, 17);
             this.label5.TabIndex = 23;
-            this.label5.Text = "PROHIBIDO SU VENTA";
+            this.label5.Text = "Copyright";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(106, 306);
+            this.label3.Location = new System.Drawing.Point(133, 312);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 13);
+            this.label3.Size = new System.Drawing.Size(154, 13);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Desarrollado por: Codigo Estudiante";
+            this.label3.Text = "Desarrollado por TeamIA  2023";
             // 
             // label4
             // 
@@ -65,6 +65,7 @@
             this.label4.TabIndex = 20;
             this.label4.Text = resources.GetString("label4.Text");
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
@@ -82,9 +83,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Open Source";
+            this.label1.Text = "Software";
             // 
             // mdAcercade
             // 

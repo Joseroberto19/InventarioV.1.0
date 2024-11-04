@@ -40,7 +40,9 @@ namespace ProyectoVenta.Formularios.Proveedores
                     pr.IdProveedor,
                     "",
                     pr.NumeroDocumento,
-                    pr.NombreCompleto
+                    pr.NombreCompleto,
+                    pr.Telefono,
+                    pr.Direccion
                 });
             }
             Limpiar();
@@ -62,6 +64,8 @@ namespace ProyectoVenta.Formularios.Proveedores
         {
             txtnumero.BackColor = Color.White;
             txtnombre.BackColor = Color.White;
+            txtTelefono.BackColor = Color.White;
+            txtdireccion.BackColor = Color.White;  
             if (vista)
             {
                 if (dgvdata.Rows.Count > 0)
@@ -74,6 +78,8 @@ namespace ProyectoVenta.Formularios.Proveedores
             _indice = 0;
             txtnumero.Text = "";
             txtnombre.Text = "";
+            txtTelefono.Text = "";
+            txtdireccion.Text = "";
             lblresultado.Text = "";
             txtnumero.Focus();
         }
@@ -110,9 +116,13 @@ namespace ProyectoVenta.Formularios.Proveedores
                     _indice = index;
                     txtnumero.Text = dgvdata.Rows[index].Cells["NumeroDocumento"].Value.ToString();
                     txtnombre.Text = dgvdata.Rows[index].Cells["NombreCompleto"].Value.ToString();
+                    txtTelefono.Text = dgvdata.Rows[index].Cells["Telefono"].Value.ToString();
+                    txtdireccion.Text = dgvdata.Rows[index].Cells["Direccion"].Value.ToString();
 
                     txtnumero.BackColor = Color.LemonChiffon;
                     txtnombre.BackColor = Color.LemonChiffon;
+                    txtTelefono.BackColor = Color.LemonChiffon;
+                    txtdireccion.BackColor = Color.LemonChiffon;
                     dgvdata.Rows[index].DefaultCellStyle.BackColor = Color.LemonChiffon;
                 }
             }
@@ -140,7 +150,14 @@ namespace ProyectoVenta.Formularios.Proveedores
                 return;
             }
 
-            Proveedor obj = new Proveedor() { IdProveedor = _id, NumeroDocumento = txtnumero.Text, NombreCompleto = txtnombre.Text };
+            Proveedor obj = new Proveedor()
+            {
+                IdProveedor = _id,
+                NumeroDocumento = txtnumero.Text,
+                NombreCompleto = txtnombre.Text,
+                Telefono = txtTelefono.Text,
+                Direccion = txtdireccion.Text
+            };
 
             int existe = ProveedorLogica.Instancia.Existe(obj.NumeroDocumento, _id, out mensaje);
             if (existe > 0)
@@ -156,7 +173,7 @@ namespace ProyectoVenta.Formularios.Proveedores
                 if (idgenerado > 0)
                 {
                     Limpiar();
-                    dgvdata.Rows.Add(new object[] { idgenerado, "", obj.NumeroDocumento, obj.NombreCompleto });
+                    dgvdata.Rows.Add(new object[] { idgenerado, "", obj.NumeroDocumento, obj.NombreCompleto, obj.Telefono, obj.Direccion });
                     lblresultado.Text = "Registro Correcto";
                     lblresultado.ForeColor = Color.Green;
                 }
@@ -173,6 +190,8 @@ namespace ProyectoVenta.Formularios.Proveedores
                 {
                     dgvdata.Rows[_indice].Cells["NumeroDocumento"].Value = obj.NumeroDocumento;
                     dgvdata.Rows[_indice].Cells["NombreCompleto"].Value = obj.NombreCompleto;
+                    dgvdata.Rows[_indice].Cells["Telefono"].Value = obj.Telefono;
+                    dgvdata.Rows[_indice].Cells["Direccion"].Value = obj.Direccion;
                     Limpiar();
                     lblresultado.Text = "Modificación Correcta";
                     lblresultado.ForeColor = Color.Green;
@@ -232,6 +251,21 @@ namespace ProyectoVenta.Formularios.Proveedores
                 row.Visible = true;
             }
             dgvdata.ClearSelection();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnumero_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

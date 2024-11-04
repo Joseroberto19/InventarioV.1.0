@@ -39,7 +39,7 @@ namespace ProyectoVenta.Logica
                 using (SQLiteConnection conexion = new SQLiteConnection(Conexion.cadena))
                 {
                     conexion.Open();
-                    string query = "select IdProveedor,NumeroDocumento,NombreCompleto from PROVEEDOR;";
+                    string query = "select IdProveedor, NumeroDocumento, NombreCompleto, Telefono, Direccion from PROVEEDOR;";
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                     cmd.CommandType = System.Data.CommandType.Text;
 
@@ -51,7 +51,9 @@ namespace ProyectoVenta.Logica
                             {
                                 IdProveedor = int.Parse(dr["IdProveedor"].ToString()),
                                 NumeroDocumento = dr["NumeroDocumento"].ToString(),
-                                NombreCompleto = dr["NombreCompleto"].ToString()
+                                NombreCompleto = dr["NombreCompleto"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                Direccion = dr["Direccion"].ToString()
                             });
                         }
                     }
@@ -110,12 +112,14 @@ namespace ProyectoVenta.Logica
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
 
-                    query.AppendLine("insert into PROVEEDOR(NumeroDocumento,NombreCompleto) values (@pnumero,@pnombre);");
+                    query.AppendLine("insert into PROVEEDOR(NumeroDocumento,NombreCompleto,Telefono,Direccion) values (@pnumero,@pnombre,@ptelefono,@pdireccion);");
                     query.AppendLine("select last_insert_rowid();");
 
                     SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
                     cmd.Parameters.Add(new SQLiteParameter("@pnumero", objeto.NumeroDocumento));
                     cmd.Parameters.Add(new SQLiteParameter("@pnombre", objeto.NombreCompleto));
+                    cmd.Parameters.Add(new SQLiteParameter("@ptelefono", objeto.Telefono));       // Añade Telefono
+                    cmd.Parameters.Add(new SQLiteParameter("@pdireccion", objeto.Direccion));
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     respuesta = Convert.ToInt32(cmd.ExecuteScalar().ToString());
@@ -143,12 +147,14 @@ namespace ProyectoVenta.Logica
                 {
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("update PROVEEDOR set NumeroDocumento = @pnumero,NombreCompleto = @pnombre where IdProveedor = @pidproveedor");
-
+                    query.AppendLine("UPDATE PROVEEDOR SET NumeroDocumento = @pnumero, NombreCompleto = @pnombre, Telefono = @ptelefono, Direccion = @pdireccion");
+                    query.AppendLine("WHERE IdProveedor = @pidproveedor");
                     SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
                     cmd.Parameters.Add(new SQLiteParameter("@pidproveedor", objeto.IdProveedor));
                     cmd.Parameters.Add(new SQLiteParameter("@pnumero", objeto.NumeroDocumento));
                     cmd.Parameters.Add(new SQLiteParameter("@pnombre", objeto.NombreCompleto));
+                    cmd.Parameters.Add(new SQLiteParameter("@ptelefono", objeto.Telefono));
+                    cmd.Parameters.Add(new SQLiteParameter("@pdireccion", objeto.Direccion));
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     respuesta = cmd.ExecuteNonQuery();

@@ -87,7 +87,7 @@
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(1264, 69);
+            this.label1.Size = new System.Drawing.Size(1278, 69);
             this.label1.TabIndex = 3;
             this.label1.Text = "INVENTARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,7 +224,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 69);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.statusStrip1.Size = new System.Drawing.Size(1264, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1278, 22);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -362,6 +362,7 @@
             this.btnConfiguracion.Text = "Configuracion";
             this.btnConfiguracion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Visible = false;
             this.btnConfiguracion.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // tableLayoutPanel2
@@ -386,7 +387,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 748);
+            this.ClientSize = new System.Drawing.Size(1278, 748);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);

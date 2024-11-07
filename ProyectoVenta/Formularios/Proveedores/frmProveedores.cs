@@ -1,4 +1,5 @@
-﻿using ProyectoVenta.Herrarmientas;
+﻿using ClosedXML.Excel;
+using ProyectoVenta.Herrarmientas;
 using ProyectoVenta.Logica;
 using ProyectoVenta.Modelo;
 using System;
@@ -266,6 +267,70 @@ namespace ProyectoVenta.Formularios.Proveedores
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnexportar_Click(object sender, EventArgs e)
+        {
+            if (dgvdata.Rows.Count < 1)
+            {
+                MessageBox.Show("No hay datos para exportar", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            DataTable dt = new DataTable();
+
+            // Agregar columnas automáticamente desde el DataGridView, excepto las columnas de tipo botón
+            foreach (DataGridViewColumn column in dgvdata.Columns)
+            {
+                if (column.Visible && column.GetType() != typeof(DataGridViewButtonColumn)) // Solo columnas visibles y no botón
+                {
+                    dt.Columns.Add(column.HeaderText, typeof(string));
+                }
+            }
+
+            // Agregar filas automáticamente desde el DataGridView
+            foreach (DataGridViewRow row in dgvdata.Rows)
+            {
+                DataRow dr = dt.NewRow();
+                foreach (DataGridViewColumn column in dgvdata.Columns)
+                {
+                    if (column.Visible && column.GetType() != typeof(DataGridViewButtonColumn)) // Solo columnas visibles y no botón
+                    {
+                        string columnName = column.HeaderText;
+
+                        // Asegurarse de que la columna existe en el DataTable antes de asignar valor
+                        if (dt.Columns.Contains(columnName))
+                        {
+                            dr[columnName] = row.Cells[column.Index].Value?.ToString() ?? string.Empty;
+                        }
+                    }
+                }
+                dt.Rows.Add(dr);
+            }
+
+            SaveFileDialog savefile = new SaveFileDialog
+            {
+                FileName = string.Format("Proveedores_{0}.xlsx", DateTime.Now.ToString("ddMMyyyyHHmmss")),
+                Filter = "Excel Files|*.xlsx"
+            };
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (XLWorkbook wb = new XLWorkbook())
+                    {
+                        var hoja = wb.Worksheets.Add(dt, "Informe");
+                        hoja.ColumnsUsed().AdjustToContents();
+                        wb.SaveAs(savefile.FileName);
+                    }
+                    MessageBox.Show("Reporte Generado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al generar reporte: {ex.Message}", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
         }
     }
 }

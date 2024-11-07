@@ -49,6 +49,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -288,6 +290,7 @@
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "producto32.png");
+            this.imageList1.Images.SetKeyName(1, "TeamIAlogo50x50.png");
             // 
             // btn2Configuracion
             // 
@@ -373,13 +376,33 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.btn2Configuracion, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnsalir, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1043, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1090, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 66);
             this.tableLayoutPanel2.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(992, 687);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(213, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "© TeamIA. Todos los derechos reservados.";
+            // 
+            // label3
+            // 
+            this.label3.ImageKey = "TeamIAlogo50x50.png";
+            this.label3.ImageList = this.imageList1;
+            this.label3.Location = new System.Drawing.Point(1211, 676);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 35);
+            this.label3.TabIndex = 18;
+            this.label3.Text = ".";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // Inicio
             // 
@@ -389,6 +412,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1278, 748);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panelContenedor);
@@ -433,5 +458,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private FontAwesome.Sharp.IconButton btnConfiguracion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

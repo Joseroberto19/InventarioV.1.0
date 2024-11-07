@@ -89,7 +89,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(6, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1046, 533);
+            this.label1.Size = new System.Drawing.Size(1046, 529);
             this.label1.TabIndex = 93;
             // 
             // txtcodigo

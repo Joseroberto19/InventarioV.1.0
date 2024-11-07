@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label5 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
@@ -37,6 +38,9 @@
             this.btningresar = new System.Windows.Forms.Button();
             this.txtclave = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,12 +141,41 @@
             this.txtusuario.Size = new System.Drawing.Size(245, 23);
             this.txtusuario.TabIndex = 50;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "TeamIAlogo50x50.png");
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(58, 490);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 13);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "© TeamIA. Todos los derechos reservados.";
+            // 
+            // label4
+            // 
+            this.label4.ImageKey = "TeamIAlogo50x50.png";
+            this.label4.ImageList = this.imageList1;
+            this.label4.Location = new System.Drawing.Point(156, 467);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 23);
+            this.label4.TabIndex = 57;
+            this.label4.Text = ".";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(329, 512);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.label3);
@@ -174,5 +207,8 @@
         private System.Windows.Forms.Button btningresar;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.TextBox txtusuario;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

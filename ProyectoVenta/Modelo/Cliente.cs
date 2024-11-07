@@ -11,5 +11,8 @@ namespace ProyectoVenta.Modelo
         public int IdCliente { get; set; }
         public string NumeroDocumento { get; set; }
         public string NombreCompleto { get; set; }
+        public object RUC { get; internal set; }
+        public object Telefono { get; internal set; }
+        public object Direccion { get; internal set; }
     }
 }

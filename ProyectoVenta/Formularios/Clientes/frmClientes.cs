@@ -39,7 +39,11 @@ namespace ProyectoVenta.Formularios.Clientes
                     pr.IdCliente,
                     "",
                     pr.NumeroDocumento,
-                    pr.NombreCompleto
+                    pr.NombreCompleto,
+                    pr.RUC,                 // Mostrar RUC
+                    pr.Telefono,            // Mostrar Telefono
+                    pr.Direccion            // Mostrar Direccion
+
                 });
             }
             Limpiar();
@@ -60,6 +64,9 @@ namespace ProyectoVenta.Formularios.Clientes
         {
             txtnumero.BackColor = Color.White;
             txtnombre.BackColor = Color.White;
+            txtRUC.BackColor = Color.White;
+            txtTelefono.BackColor = Color.White;     
+            txtDireccion.BackColor = Color.White;    
             if (vista)
             {
                 if (dgvdata.Rows.Count > 0)
@@ -72,6 +79,9 @@ namespace ProyectoVenta.Formularios.Clientes
             _indice = 0;
             txtnumero.Text = "";
             txtnombre.Text = "";
+            txtRUC.Text = "";                        // Limpia RUC
+            txtTelefono.Text = "";                   // Limpia Telefono
+            txtDireccion.Text = "";
             lblresultado.Text = "";
             txtnumero.Focus();
         }
@@ -108,9 +118,15 @@ namespace ProyectoVenta.Formularios.Clientes
                     _indice = index;
                     txtnumero.Text = dgvdata.Rows[index].Cells["NumeroDocumento"].Value.ToString();
                     txtnombre.Text = dgvdata.Rows[index].Cells["NombreCompleto"].Value.ToString();
+                    txtRUC.Text = dgvdata.Rows[index].Cells["RUC"].Value.ToString();           // Carga RUC
+                    txtTelefono.Text = dgvdata.Rows[index].Cells["Telefono"].Value.ToString(); // Carga Telefono
+                    txtDireccion.Text = dgvdata.Rows[index].Cells["Direccion"].Value.ToString(); // Carga Direccion
 
                     txtnumero.BackColor = Color.LemonChiffon;
                     txtnombre.BackColor = Color.LemonChiffon;
+                    txtRUC.BackColor = Color.LemonChiffon;
+                    txtTelefono.BackColor = Color.LemonChiffon;
+                    txtDireccion.BackColor = Color.LemonChiffon;
                     dgvdata.Rows[index].DefaultCellStyle.BackColor = Color.LemonChiffon;
                 }
             }
@@ -138,8 +154,15 @@ namespace ProyectoVenta.Formularios.Clientes
                 return;
             }
 
-            Cliente obj = new Cliente(){ IdCliente = _id, NumeroDocumento = txtnumero.Text, NombreCompleto = txtnombre.Text};
-
+            Cliente obj = new Cliente()
+            {
+                IdCliente = _id,
+                NumeroDocumento = txtnumero.Text,
+                NombreCompleto = txtnombre.Text,
+                RUC = txtRUC.Text,                 // Asigna RUC
+                Telefono = txtTelefono.Text,       // Asigna Telefono
+                Direccion = txtDireccion.Text      // Asigna Direccion
+            };
             int existe = ClienteLogica.Instancia.Existe(obj.NumeroDocumento, _id, out mensaje);
             if (existe > 0)
             {
@@ -154,7 +177,15 @@ namespace ProyectoVenta.Formularios.Clientes
                 if (idgenerado > 0)
                 {
                     Limpiar();
-                    dgvdata.Rows.Add(new object[] { idgenerado, "", obj.NumeroDocumento, obj.NombreCompleto});
+                    dgvdata.Rows.Add(new object[] {
+                    idgenerado,
+                    "",
+                    obj.NumeroDocumento,
+                    obj.NombreCompleto,
+                    obj.RUC,
+                    obj.Telefono,
+                    obj.Direccion
+                });
                     lblresultado.Text = "Registro Correcto";
                     lblresultado.ForeColor = Color.Green;
                 }
@@ -171,6 +202,9 @@ namespace ProyectoVenta.Formularios.Clientes
                 {
                     dgvdata.Rows[_indice].Cells["NumeroDocumento"].Value = obj.NumeroDocumento;
                     dgvdata.Rows[_indice].Cells["NombreCompleto"].Value = obj.NombreCompleto;
+                    dgvdata.Rows[_indice].Cells["RUC"].Value = obj.RUC;
+                    dgvdata.Rows[_indice].Cells["Telefono"].Value = obj.Telefono;
+                    dgvdata.Rows[_indice].Cells["Direccion"].Value = obj.Direccion;
                     Limpiar();
                     lblresultado.Text = "Modificación Correcta";
                     lblresultado.ForeColor = Color.Green;
@@ -231,6 +265,11 @@ namespace ProyectoVenta.Formularios.Clientes
                 row.Visible = true;
             }
             dgvdata.ClearSelection();
+        }
+
+        private void txtruc_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -77,7 +77,7 @@
             this.label2.Location = new System.Drawing.Point(6, 1);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(1040, 41);
+            this.label2.Size = new System.Drawing.Size(1046, 41);
             this.label2.TabIndex = 94;
             this.label2.Text = "Producto";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -89,7 +89,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(6, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1040, 524);
+            this.label1.Size = new System.Drawing.Size(1046, 533);
             this.label1.TabIndex = 93;
             // 
             // txtcodigo
@@ -139,9 +139,9 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(29, 195);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 99;
-            this.label4.Text = "Categoria :";
+            this.label4.Text = "Medida :";
             // 
             // txtalmacen
             // 

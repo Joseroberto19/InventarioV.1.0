@@ -39,7 +39,7 @@ namespace ProyectoVenta.Logica
                 using (SQLiteConnection conexion = new SQLiteConnection(Conexion.cadena))
                 {
                     conexion.Open();
-                    string query = "select IdCliente,NumeroDocumento,NombreCompleto from CLIENTE;";
+                    string query = "SELECT IdCliente, NumeroDocumento, NombreCompleto, RUC, Telefono, Direccion FROM CLIENTE;";
                     SQLiteCommand cmd = new SQLiteCommand(query, conexion);
                     cmd.CommandType = System.Data.CommandType.Text;
 
@@ -51,7 +51,10 @@ namespace ProyectoVenta.Logica
                             {
                                 IdCliente = int.Parse(dr["IdCliente"].ToString()),
                                 NumeroDocumento = dr["NumeroDocumento"].ToString(),
-                                NombreCompleto = dr["NombreCompleto"].ToString()
+                                NombreCompleto = dr["NombreCompleto"].ToString(),
+                                RUC = dr["RUC"].ToString(),
+                                Telefono = dr["Telefono"].ToString(),
+                                Direccion = dr["Direccion"].ToString()
                             });
                         }
                     }
@@ -106,16 +109,19 @@ namespace ProyectoVenta.Logica
             {
                 try
                 {
-
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
 
-                    query.AppendLine("insert into CLIENTE(NumeroDocumento,NombreCompleto) values (@pnumero,@pnombre);");
-                    query.AppendLine("select last_insert_rowid();");
+                    query.AppendLine("INSERT INTO CLIENTE (NumeroDocumento, NombreCompleto, RUC, Telefono, Direccion)");
+                    query.AppendLine("VALUES (@pnumero, @pnombre, @pruc, @ptelefono, @pdireccion);");
+                    query.AppendLine("SELECT last_insert_rowid();");
 
                     SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
                     cmd.Parameters.Add(new SQLiteParameter("@pnumero", objeto.NumeroDocumento));
                     cmd.Parameters.Add(new SQLiteParameter("@pnombre", objeto.NombreCompleto));
+                    cmd.Parameters.Add(new SQLiteParameter("@pruc", objeto.RUC));                // Añade RUC
+                    cmd.Parameters.Add(new SQLiteParameter("@ptelefono", objeto.Telefono));      // Añade Telefono
+                    cmd.Parameters.Add(new SQLiteParameter("@pdireccion", objeto.Direccion));    // Añade Direccion
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     respuesta = Convert.ToInt32(cmd.ExecuteScalar().ToString());
@@ -143,12 +149,16 @@ namespace ProyectoVenta.Logica
                 {
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
-                    query.AppendLine("update CLIENTE set NumeroDocumento = @pnumero,NombreCompleto = @pnombre where IdCliente = @pidcliente");
+                    query.AppendLine("UPDATE CLIENTE SET NumeroDocumento = @pnumero, NombreCompleto = @pnombre, RUC = @pruc, Telefono = @ptelefono, Direccion = @pdireccion");
+                    query.AppendLine("WHERE IdCliente = @pidcliente");
 
                     SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
                     cmd.Parameters.Add(new SQLiteParameter("@pidcliente", objeto.IdCliente));
                     cmd.Parameters.Add(new SQLiteParameter("@pnumero", objeto.NumeroDocumento));
                     cmd.Parameters.Add(new SQLiteParameter("@pnombre", objeto.NombreCompleto));
+                    cmd.Parameters.Add(new SQLiteParameter("@pruc", objeto.RUC));                // Añade RUC
+                    cmd.Parameters.Add(new SQLiteParameter("@ptelefono", objeto.Telefono));      // Añade Telefono
+                    cmd.Parameters.Add(new SQLiteParameter("@pdireccion", objeto.Direccion));    // Añade Direccion
                     cmd.CommandType = System.Data.CommandType.Text;
 
                     respuesta = cmd.ExecuteNonQuery();

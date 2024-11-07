@@ -136,7 +136,7 @@
             this.btnSalidas.Name = "btnSalidas";
             this.btnSalidas.Size = new System.Drawing.Size(167, 64);
             this.btnSalidas.TabIndex = 5;
-            this.btnSalidas.Text = "Salidas";
+            this.btnSalidas.Text = "Ventas";
             this.btnSalidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSalidas.UseVisualStyleBackColor = false;
             this.btnSalidas.Click += new System.EventHandler(this.btnSalidas_Click);
@@ -160,7 +160,7 @@
             this.btnentradas.Name = "btnentradas";
             this.btnentradas.Size = new System.Drawing.Size(167, 64);
             this.btnentradas.TabIndex = 6;
-            this.btnentradas.Text = "Entradas";
+            this.btnentradas.Text = "Compras";
             this.btnentradas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnentradas.UseVisualStyleBackColor = false;
             this.btnentradas.Click += new System.EventHandler(this.btnentradas_Click);

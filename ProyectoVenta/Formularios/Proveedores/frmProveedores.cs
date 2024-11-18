@@ -364,8 +364,8 @@ namespace ProyectoVenta.Formularios.Proveedores
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
-            int startX = 10; // Margen inicial en X
-            int startY = 10; // Margen inicial en Y
+            int startX = 50; // Margen inicial en X
+            int startY = 50; // Margen inicial en Y
             int offsetY = 30; // Espacio vertical entre filas
 
             Font font = new Font("Arial", 10);
@@ -378,7 +378,7 @@ namespace ProyectoVenta.Formularios.Proveedores
                 if (column.Visible && column.GetType() != typeof(DataGridViewButtonColumn))
                 {
                     e.Graphics.DrawString(column.HeaderText, font, brush, currentX, startY);
-                    currentX += 100; // Espacio entre columnas
+                    currentX += 140; // Espacio entre columnas
                 }
             }
 
@@ -394,7 +394,7 @@ namespace ProyectoVenta.Formularios.Proveedores
                     {
                         string cellValue = row.Cells[column.Index].Value?.ToString() ?? string.Empty;
                         e.Graphics.DrawString(cellValue, font, brush, currentX, startY);
-                        currentX += 100; // Espacio entre columnas
+                        currentX += 140; // Espacio entre columnas
                     }
                 }
                 startY += offsetY;

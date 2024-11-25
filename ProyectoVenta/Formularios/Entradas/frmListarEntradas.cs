@@ -155,5 +155,15 @@ namespace ProyectoVenta.Formularios.Entradas
         {
 
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            DynamicGridPrinter printer = new DynamicGridPrinter(dgvdata);
+
+            // Excluir columnas específicas por su nombre
+            printer.ExcludedColumns.Add("UsuarioRegistro");
+
+            printer.ShowPrintPreview();
+        }
     }
 }

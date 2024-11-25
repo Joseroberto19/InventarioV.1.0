@@ -240,7 +240,9 @@
     </Compile>
     <Compile Include="Logica\ClienteLogica.cs" />
     <Compile Include="Logica\Conexion.cs" />
+    <Compile Include="Logica\DataGridViewPrinter.cs" />
     <Compile Include="Logica\DatoLogica.cs" />
+    <Compile Include="Logica\DynamicGridPrinter.cs" />
     <Compile Include="Logica\EntradaLogica.cs" />
     <Compile Include="Logica\FormManager.cs" />
     <Compile Include="Logica\IExportable.cs" />

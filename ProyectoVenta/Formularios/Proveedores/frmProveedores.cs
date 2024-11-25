@@ -67,7 +67,7 @@ namespace ProyectoVenta.Formularios.Proveedores
             txtnumero.BackColor = Color.White;
             txtnombre.BackColor = Color.White;
             txtTelefono.BackColor = Color.White;
-            txtdireccion.BackColor = Color.White;  
+            txtdireccion.BackColor = Color.White;
             if (vista)
             {
                 if (dgvdata.Rows.Count > 0)
@@ -336,69 +336,14 @@ namespace ProyectoVenta.Formularios.Proveedores
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            if (dgvdata.Rows.Count < 1)
-            {
-                MessageBox.Show("No hay datos para imprimir", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            DynamicGridPrinter printer = new DynamicGridPrinter(dgvdata);
 
-            PrintDocument printDocument = new PrintDocument();
-            printDocument.PrintPage += PrintDocument_PrintPage;
+            // Excluir columnas específicas por su nombre
+            //printer.ExcludedColumns.Add("NombreColumna1");
+            //printer.ExcludedColumns.Add("NombreColumna2");
 
-            PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog
-            {
-                Document = printDocument,
-                Width = 800,
-                Height = 600
-            };
+            printer.ShowPrintPreview();
 
-            try
-            {
-                printPreviewDialog.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al imprimir: {ex.Message}", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-        }
-
-        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
-        {
-            int startX = 50; // Margen inicial en X
-            int startY = 50; // Margen inicial en Y
-            int offsetY = 30; // Espacio vertical entre filas
-
-            Font font = new Font("Arial", 10);
-            Brush brush = Brushes.Black;
-
-            // Imprimir encabezados
-            int currentX = startX;
-            foreach (DataGridViewColumn column in dgvdata.Columns)
-            {
-                if (column.Visible && column.GetType() != typeof(DataGridViewButtonColumn))
-                {
-                    e.Graphics.DrawString(column.HeaderText, font, brush, currentX, startY);
-                    currentX += 140; // Espacio entre columnas
-                }
-            }
-
-            startY += offsetY;
-
-            // Imprimir filas
-            foreach (DataGridViewRow row in dgvdata.Rows)
-            {
-                currentX = startX;
-                foreach (DataGridViewColumn column in dgvdata.Columns)
-                {
-                    if (column.Visible && column.GetType() != typeof(DataGridViewButtonColumn))
-                    {
-                        string cellValue = row.Cells[column.Index].Value?.ToString() ?? string.Empty;
-                        e.Graphics.DrawString(cellValue, font, brush, currentX, startY);
-                        currentX += 140; // Espacio entre columnas
-                    }
-                }
-                startY += offsetY;
-            }
         }
     }
 }

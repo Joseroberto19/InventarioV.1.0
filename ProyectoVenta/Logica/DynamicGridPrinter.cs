@@ -163,7 +163,7 @@ namespace ProyectoVenta.Logica
 
         private int[] CalculateColumnWidths(Graphics graphics, int pageWidth, List<DataGridViewColumn> currentPageColumns)
         {
-            int totalDynamicWidth = pageWidth - (_startX - 250);
+            int totalDynamicWidth = pageWidth - (_startX - 250 );
             int dynamicColumnWidth = totalDynamicWidth / currentPageColumns.Count;
 
             int[] columnWidths = new int[_dataGridView.Columns.Count];

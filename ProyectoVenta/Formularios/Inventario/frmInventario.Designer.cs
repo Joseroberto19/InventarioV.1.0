@@ -46,8 +46,6 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnsalir = new FontAwesome.Sharp.IconButton();
             this.dgvdata = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.CodigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +55,9 @@
             this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalIngresos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalEgresos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -271,30 +272,6 @@
             this.dgvdata.Size = new System.Drawing.Size(1015, 412);
             this.dgvdata.TabIndex = 143;
             // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Teal;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(4, 3);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(1047, 41);
-            this.label2.TabIndex = 145;
-            this.label2.Text = "Inventario";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(4, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1047, 521);
-            this.label1.TabIndex = 144;
-            // 
             // CodigoProducto
             // 
             this.CodigoProducto.HeaderText = "Codigo Producto";
@@ -363,12 +340,57 @@
             this.TotalEgresos.Name = "TotalEgresos";
             this.TotalEgresos.ReadOnly = true;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Teal;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(4, 3);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.label2.Size = new System.Drawing.Size(1047, 41);
+            this.label2.TabIndex = 145;
+            this.label2.Text = "Inventario";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(4, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1047, 521);
+            this.label1.TabIndex = 144;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 17;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.iconButton1.Location = new System.Drawing.Point(145, 101);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(118, 21);
+            this.iconButton1.TabIndex = 159;
+            this.iconButton1.Text = "Imprimir";
+            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // frmInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 570);
             this.ControlBox = false;
+            this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.txtfechafin);
             this.Controls.Add(this.txtfechainicio);
@@ -424,5 +446,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StockActual;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalIngresos;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalEgresos;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

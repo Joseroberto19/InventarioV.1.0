@@ -394,6 +394,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1048, 523);
             this.label1.TabIndex = 155;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblresultado
             // 

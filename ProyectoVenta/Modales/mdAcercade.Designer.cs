@@ -54,7 +54,8 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 13);
             this.label3.TabIndex = 22;
-            this.label3.Text = "Desarrollado por TeamIA  2023";
+            this.label3.Text = "Desarrollado por TeamIA  2024";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

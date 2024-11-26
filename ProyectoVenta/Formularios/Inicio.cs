@@ -107,7 +107,7 @@ namespace ProyectoVenta.Formularios
 
             lblstatus1.Text = string.Format("{0}", NombreUsuario);
             lblstatus2.Text = string.Format("{0}", FechaHora);
-
+            MostrarBienvenida();
             if (oPermisos.Salidas == 0) {
                 btnsalir.Enabled = false;
                 btnsalir.Cursor = Cursors.No;
@@ -149,6 +149,32 @@ namespace ProyectoVenta.Formularios
             this.Show();
         }
 
+
+        public void MostrarBienvenida()
+        {
+            // Limpia el panel
+            panelContenedor.Controls.Clear();
+
+            // Agrega un PictureBox para el logo
+            PictureBox pictureBoxLogo = new PictureBox();
+            pictureBoxLogo.Image = Properties.Resources._1053244; // Cambia por tu logo en recursos
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxLogo.Dock = DockStyle.Top;
+            pictureBoxLogo.Height = 200;
+
+            // Agrega un Label para el mensaje de bienvenida
+            Label lblBienvenida = new Label();
+            lblBienvenida.Text = "¡Bienvenido a la aplicación!";
+            lblBienvenida.Font = new Font("Arial", 24, FontStyle.Bold);
+            lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
+            lblBienvenida.Dock = DockStyle.Fill;
+
+            // Agrega los controles al panel
+            panelContenedor.Controls.Add(lblBienvenida);
+            panelContenedor.Controls.Add(pictureBoxLogo);
+        }
+
+
         //FUNCION PANEL
         public void AbrirFormHija(object formhija) {
             if (this.panelContenedor.Controls.Count > 0)
@@ -178,7 +204,7 @@ namespace ProyectoVenta.Formularios
                 }
             }
             */
-
+            panelContenedor.Controls.Clear();
             frmRegistrarProducto formproductos = new frmRegistrarProducto(this.panelContenedor);
             FormManager.AbrirFormHija(this.panelContenedor, formproductos);
 
@@ -200,6 +226,7 @@ namespace ProyectoVenta.Formularios
             //        FormularioVista.FormClosing += Frm_Closing;
             //    }
             //}
+            panelContenedor.Controls.Clear();
             frmRegistrarSalida formproductos = new frmRegistrarSalida(this.panelContenedor, _NombreUsuario);
             FormManager.AbrirFormHija(this.panelContenedor, formproductos);
 
@@ -224,21 +251,22 @@ namespace ProyectoVenta.Formularios
                 }
             }
             */
-            
 
+            panelContenedor.Controls.Clear();
             frmRegistrarEntrada formproductos = new frmRegistrarEntrada(this.panelContenedor , _NombreUsuario);
             FormManager.AbrirFormHija(this.panelContenedor, formproductos);
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            panelContenedor.Controls.Clear();
             FormManager.AbrirFormHija(this.panelContenedor, new frmClientes());
 
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-
+            panelContenedor.Controls.Clear();
             FormManager.AbrirFormHija(this.panelContenedor, new frmProveedores());
 
         }
@@ -320,6 +348,12 @@ namespace ProyectoVenta.Formularios
         }
 
         public void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

@@ -17,6 +17,9 @@ namespace ProyectoVenta.Modales
     {
         public string _DocumentoProveedor { get; set; }
         public string _NombreProveedor { get; set; }
+        public string _Telefono { get; set; }
+        public string _Direccion { get; set; }
+
 
         public mdProveedores()
         {
@@ -39,7 +42,9 @@ namespace ProyectoVenta.Modales
                     pr.IdProveedor,
                     "",
                     pr.NumeroDocumento,
-                    pr.NombreCompleto
+                    pr.NombreCompleto,
+                    pr.Telefono,
+                    pr.Direccion,
                 });
             }
 
@@ -83,6 +88,8 @@ namespace ProyectoVenta.Modales
                 {
                     _DocumentoProveedor = dgvdata.Rows[index].Cells["NumeroDocumento"].Value.ToString();
                     _NombreProveedor = dgvdata.Rows[index].Cells["NombreCompleto"].Value.ToString();
+                    _Telefono = dgvdata.Rows[index].Cells["Telefono"].Value.ToString();
+                    _Direccion = dgvdata.Rows[index].Cells["Direccion"].Value.ToString();
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }

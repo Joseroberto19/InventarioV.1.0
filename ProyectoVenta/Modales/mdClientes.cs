@@ -19,6 +19,11 @@ namespace ProyectoVenta.Modales
         public string _DocumentoCliente { get; set; }
         public string _NombreCliente { get; set; }
 
+        public string _RUC { get; set; }
+
+        public string _Telefono { get; set; }
+
+        public string _Direccion { get; set; }
         public mdClientes()
         {
             InitializeComponent();
@@ -40,7 +45,10 @@ namespace ProyectoVenta.Modales
                     pr.IdCliente,
                     "",
                     pr.NumeroDocumento,
-                    pr.NombreCompleto
+                    pr.NombreCompleto,
+                    pr.RUC,
+                    pr.Telefono,
+                    pr.Direccion,
                 });
             }
 
@@ -85,6 +93,9 @@ namespace ProyectoVenta.Modales
                 {
                     _DocumentoCliente = dgvdata.Rows[index].Cells["NumeroDocumento"].Value.ToString();
                     _NombreCliente = dgvdata.Rows[index].Cells["NombreCompleto"].Value.ToString();
+                    _RUC = dgvdata.Rows[index].Cells["RUC"].Value.ToString();
+                    _Telefono = dgvdata.Rows[index].Cells["Telefono"].Value.ToString();
+                    _Direccion = dgvdata.Rows[index].Cells["Direccion"].Value.ToString();
                     this.DialogResult = DialogResult.OK;
                     this.Close();
                 }

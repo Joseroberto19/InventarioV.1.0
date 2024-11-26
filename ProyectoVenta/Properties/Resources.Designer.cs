@@ -63,6 +63,16 @@ namespace ProyectoVenta.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1053244 {
+            get {
+                object obj = ResourceManager.GetObject("_1053244", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _383148_16 {
             get {
                 object obj = ResourceManager.GetObject("_383148_16", resourceCulture);

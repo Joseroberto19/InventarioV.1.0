@@ -392,6 +392,7 @@
             this.label2.Size = new System.Drawing.Size(213, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "© TeamIA. Todos los derechos reservados.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -401,7 +402,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 35);
             this.label3.TabIndex = 18;
-            this.label3.Text = ".";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // Inicio

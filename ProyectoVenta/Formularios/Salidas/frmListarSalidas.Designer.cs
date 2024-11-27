@@ -311,6 +311,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1049, 529);
             this.label1.TabIndex = 119;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox2
             // 

@@ -401,5 +401,10 @@ namespace ProyectoVenta.Formularios.Entradas
             FormManager.AbrirFormHija(_panelContenedor, new frmDetalleEntrada());
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

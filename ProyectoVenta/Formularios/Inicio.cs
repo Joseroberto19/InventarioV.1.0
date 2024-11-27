@@ -100,6 +100,14 @@ namespace ProyectoVenta.Formularios
             btnConfiguracion.ForeColor = Color.FromArgb(70, 70, 70);
             btnConfiguracion.Font = new Font("Arial", 10, FontStyle.Bold);
 
+            // Estilizando los botones con íconos (btnConfiguracion)
+            iconButton1.BackColor = Color.White;
+            iconButton1.FlatStyle = FlatStyle.Flat;
+            iconButton1.FlatAppearance.BorderColor = Color.FromArgb(52, 152, 219);
+            iconButton1.FlatAppearance.BorderSize = 1;
+            iconButton1.ForeColor = Color.FromArgb(70, 70, 70);
+            iconButton1.Font = new Font("Arial", 10, FontStyle.Bold);
+
         }
         //LOAD
         private void Inicio_Load(object sender, EventArgs e)
@@ -356,6 +364,12 @@ namespace ProyectoVenta.Formularios
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            panelContenedor.Controls.Clear();
+            FormManager.AbrirFormHija(this.panelContenedor, new frmListarProductoProveedor());
         }
     }
 }

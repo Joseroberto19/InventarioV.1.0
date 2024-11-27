@@ -164,6 +164,12 @@
     <Compile Include="Formularios\Entradas\frmListarEntradas.Designer.cs">
       <DependentUpon>frmListarEntradas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Entradas\frmListarProductoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Entradas\frmListarProductoProveedor.Designer.cs">
+      <DependentUpon>frmListarProductoProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Entradas\frmRegistrarEntrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,6 +321,7 @@
     <Compile Include="Modelo\Inventario.cs" />
     <Compile Include="Modelo\Permisos.cs" />
     <Compile Include="Modelo\Producto.cs" />
+    <Compile Include="Modelo\ProductoProveedor.cs" />
     <Compile Include="Modelo\Proveedor.cs" />
     <Compile Include="Modelo\Salida.cs" />
     <Compile Include="Modelo\TipoBarra.cs" />
@@ -348,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Entradas\frmListarEntradas.resx">
       <DependentUpon>frmListarEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Entradas\frmListarProductoProveedor.resx">
+      <DependentUpon>frmListarProductoProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Entradas\frmRegistrarEntrada.resx">
       <DependentUpon>frmRegistrarEntrada.cs</DependentUpon>

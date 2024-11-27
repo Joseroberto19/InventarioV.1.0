@@ -108,6 +108,7 @@
             this.dgvdata.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.Size = new System.Drawing.Size(969, 412);
             this.dgvdata.TabIndex = 113;
+            this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             // 
             // FechaRegistro
             // 
@@ -226,6 +227,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1046, 518);
             this.label1.TabIndex = 114;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnsalir
             // 
@@ -313,6 +315,7 @@
             this.groupBox2.Size = new System.Drawing.Size(870, 10);
             this.groupBox2.TabIndex = 137;
             this.groupBox2.TabStop = false;
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnexportar
             // 
@@ -380,6 +383,7 @@
             this.cbobuscar.Name = "cbobuscar";
             this.cbobuscar.Size = new System.Drawing.Size(145, 21);
             this.cbobuscar.TabIndex = 132;
+            this.cbobuscar.SelectedIndexChanged += new System.EventHandler(this.cbobuscar_SelectedIndexChanged);
             // 
             // txtbuscar
             // 

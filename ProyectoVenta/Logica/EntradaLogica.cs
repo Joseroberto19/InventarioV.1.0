@@ -282,10 +282,55 @@ namespace ProyectoVenta.Logica
             return oLista;
         }
 
+        //DETALLELOGICAPARAPRODUCTOPORPROVEEDOR
 
+        public List<ProductoProveedor> ListarProductosProveedores()
+        {
+            List<ProductoProveedor> lista = new List<ProductoProveedor>();
+            try
+            {
+                using (SQLiteConnection conexion = new SQLiteConnection(Conexion.cadena))
+                {
+                    conexion.Open();
+                    StringBuilder query = new StringBuilder();
 
+                    // Consulta que une DETALLE_ENTRADA y ENTRADA para obtener solo los datos requeridos.
+                    query.AppendLine("SELECT");
+                    query.AppendLine("  de.IdDetalleEntrada,");
+                    query.AppendLine("  de.DescripcionProducto,");
+                    query.AppendLine("  de.CategoriaProducto,");
+                    query.AppendLine("  de.AlmacenProducto,");
+                    query.AppendLine("  e.DocumentoProveedor,");
+                    query.AppendLine("  e.NombreProveedor");
+                    query.AppendLine("FROM DETALLE_ENTRADA de");
+                    query.AppendLine("INNER JOIN ENTRADA e ON de.IdEntrada = e.IdEntrada");
 
+                    SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
+                    cmd.CommandType = System.Data.CommandType.Text;
 
+                    using (SQLiteDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            lista.Add(new ProductoProveedor()
+                            {
+                                IdDetalleEntrada = Convert.ToInt32(dr["IdDetalleEntrada"]),
+                                DescripcionProducto = dr["DescripcionProducto"].ToString(),
+                                CategoriaProducto = dr["CategoriaProducto"].ToString(),
+                                AlmacenProducto = dr["AlmacenProducto"].ToString(),
+                                DocumentoProveedor = dr["DocumentoProveedor"].ToString(),
+                                NombreProveedor = dr["NombreProveedor"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                lista = new List<ProductoProveedor>();
+            }
+            return lista;
+        }
 
     }
 }

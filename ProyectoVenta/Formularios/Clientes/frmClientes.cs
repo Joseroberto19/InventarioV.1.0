@@ -347,5 +347,10 @@ namespace ProyectoVenta.Formularios.Clientes
 
             printer.ShowPrintPreview();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -47,11 +47,11 @@
             this.btn2Configuracion = new FontAwesome.Sharp.IconButton();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.btnConfiguracion = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.btnproductos.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnproductos.Location = new System.Drawing.Point(3, 3);
             this.btnproductos.Name = "btnproductos";
-            this.btnproductos.Size = new System.Drawing.Size(167, 54);
+            this.btnproductos.Size = new System.Drawing.Size(167, 53);
             this.btnproductos.TabIndex = 2;
             this.btnproductos.Text = "Productos";
             this.btnproductos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -111,9 +111,9 @@
             this.btnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClientes.IconSize = 50;
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnClientes.Location = new System.Drawing.Point(3, 123);
+            this.btnClientes.Location = new System.Drawing.Point(3, 121);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(167, 54);
+            this.btnClientes.Size = new System.Drawing.Size(167, 53);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,9 +135,9 @@
             this.btnSalidas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalidas.IconSize = 50;
             this.btnSalidas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSalidas.Location = new System.Drawing.Point(3, 243);
+            this.btnSalidas.Location = new System.Drawing.Point(3, 239);
             this.btnSalidas.Name = "btnSalidas";
-            this.btnSalidas.Size = new System.Drawing.Size(167, 54);
+            this.btnSalidas.Size = new System.Drawing.Size(167, 53);
             this.btnSalidas.TabIndex = 5;
             this.btnSalidas.Text = "Ventas";
             this.btnSalidas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -159,9 +159,9 @@
             this.btnentradas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnentradas.IconSize = 50;
             this.btnentradas.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnentradas.Location = new System.Drawing.Point(3, 183);
+            this.btnentradas.Location = new System.Drawing.Point(3, 180);
             this.btnentradas.Name = "btnentradas";
-            this.btnentradas.Size = new System.Drawing.Size(167, 54);
+            this.btnentradas.Size = new System.Drawing.Size(167, 53);
             this.btnentradas.TabIndex = 6;
             this.btnentradas.Text = "Compras";
             this.btnentradas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -183,9 +183,9 @@
             this.btnProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProveedores.IconSize = 50;
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnProveedores.Location = new System.Drawing.Point(3, 63);
+            this.btnProveedores.Location = new System.Drawing.Point(3, 62);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(167, 54);
+            this.btnProveedores.Size = new System.Drawing.Size(167, 53);
             this.btnProveedores.TabIndex = 7;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -207,9 +207,9 @@
             this.btnInventario.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btnInventario.IconSize = 50;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInventario.Location = new System.Drawing.Point(3, 303);
+            this.btnInventario.Location = new System.Drawing.Point(3, 298);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Size = new System.Drawing.Size(167, 54);
+            this.btnInventario.Size = new System.Drawing.Size(167, 53);
             this.btnInventario.TabIndex = 8;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -333,18 +333,43 @@
             this.tableLayoutPanel1.Controls.Add(this.btnentradas, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnSalidas, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnInventario, 0, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 91);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 94);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28816F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.Size = new System.Drawing.Size(182, 425);
             this.tableLayoutPanel1.TabIndex = 15;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.AutoSize = true;
+            this.iconButton1.BackColor = System.Drawing.SystemColors.Control;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
+            this.iconButton1.FlatAppearance.BorderSize = 2;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.File;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(3, 357);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(173, 60);
+            this.iconButton1.TabIndex = 9;
+            this.iconButton1.Text = "ProductoProveedor";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // btnConfiguracion
             // 
@@ -361,7 +386,7 @@
             this.btnConfiguracion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnConfiguracion.IconSize = 50;
             this.btnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnConfiguracion.Location = new System.Drawing.Point(3, 632);
+            this.btnConfiguracion.Location = new System.Drawing.Point(3, 596);
             this.btnConfiguracion.Name = "btnConfiguracion";
             this.btnConfiguracion.Size = new System.Drawing.Size(172, 68);
             this.btnConfiguracion.TabIndex = 9;
@@ -406,30 +431,6 @@
             this.label3.Size = new System.Drawing.Size(32, 35);
             this.label3.TabIndex = 18;
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.AutoSize = true;
-            this.iconButton1.BackColor = System.Drawing.SystemColors.Control;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.SpringGreen;
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Cubes;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.iconButton1.IconSize = 50;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.iconButton1.Location = new System.Drawing.Point(3, 363);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(167, 59);
-            this.iconButton1.TabIndex = 9;
-            this.iconButton1.Text = "Reporte";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // Inicio
             // 

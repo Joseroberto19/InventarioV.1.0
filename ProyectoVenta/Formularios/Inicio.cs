@@ -371,5 +371,10 @@ namespace ProyectoVenta.Formularios
             panelContenedor.Controls.Clear();
             FormManager.AbrirFormHija(this.panelContenedor, new frmListarProductoProveedor());
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -75,7 +75,7 @@ namespace ProyectoVenta.Formularios.Entradas
 
         private void btnsalir_Click_1(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -174,27 +174,6 @@ namespace ProyectoVenta.Formularios.Entradas
             printer.ShowPrintPreview();
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
-        {
-            dgvdata.Rows.Clear();
-
-            DateTime dt1 = Convert.ToDateTime(txtfechainicio.Value.ToString("dd/MM/yyyy"));
-            DateTime dt2 = Convert.ToDateTime(txtfechafin.Value.ToString("dd/MM/yyyy"));
-            List<ProductoProveedor> lista = EntradaLogica.Instancia.ListarProductosProveedores(); // Este ejemplo es para búsqueda entre fechas, debes implementar el filtrado adecuado si es necesario
-
-            foreach (ProductoProveedor pp in lista)
-            {
-                dgvdata.Rows.Add(new object[] {
-                    pp.IdDetalleEntrada,
-                    pp.DescripcionProducto,
-                    pp.CategoriaProducto,
-                    pp.AlmacenProducto,
-                    pp.DocumentoProveedor,
-                    pp.NombreProveedor
-                });
-            }
-        }
-
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
             txtbuscar.Text = "";
@@ -202,6 +181,11 @@ namespace ProyectoVenta.Formularios.Entradas
             {
                 row.Visible = true;
             }
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

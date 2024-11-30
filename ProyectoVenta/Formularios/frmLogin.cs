@@ -17,6 +17,9 @@ namespace ProyectoVenta.Formularios
         public frmLogin()
         {
             InitializeComponent();
+            this.MinimizeBox = true;  // Muestra el botón de minimizar
+            this.MaximizeBox = true;   // Muestra el botón de maximizar
+            this.ControlBox = true;    // Muestra el botón de cerrar
             this.BackColor = Color.FromArgb(245, 245, 245);  // Blanco humo para el fondo general
             label2.ForeColor = Color.FromArgb(70, 70, 70);
             label3.ForeColor = Color.FromArgb(70, 70, 70);

@@ -186,6 +186,7 @@
             this.Controls.Add(this.txtusuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MaximumSize = new System.Drawing.Size(345, 551);
             this.MinimumSize = new System.Drawing.Size(345, 551);
             this.Name = "frmLogin";
